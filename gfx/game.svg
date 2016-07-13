@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 0 800.00001 600.00002"
+   id="svg4034"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="game.svg">
+  <defs
+     id="defs4036">
+    <linearGradient
+       inkscape:collect="always"
+       id="metal-7">
+      <stop
+         style="stop-color:#888888;stop-opacity:1;"
+         offset="0"
+         id="stop4313" />
+      <stop
+         style="stop-color:#292929;stop-opacity:1"
+         offset="1"
+         id="stop4315" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="gradient-plane-6">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop4281" />
+      <stop
+         style="stop-color:#760000;stop-opacity:1"
+         offset="1"
+         id="stop4283" />
+    </linearGradient>
+    <linearGradient
+       id="cloud-3"
+       inkscape:collect="always">
+      <stop
+         id="stop8388"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0.72727275"
+         id="stop8390" />
+      <stop
+         id="stop8392"
+         offset="1"
+         style="stop-color:#b1b1b1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="gradient-cloud-3">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop8376" />
+      <stop
+         id="stop8382"
+         offset="0.21729305"
+         style="stop-color:#ffffff;stop-opacity:0.78039216;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8378" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4155">
+      <stop
+         style="stop-color:#9e5600;stop-opacity:1"
+         offset="0"
+         id="stop4157" />
+      <stop
+         style="stop-color:#512c00;stop-opacity:1"
+         offset="1"
+         id="stop4159" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4136">
+      <stop
+         style="stop-color:#1b62ff;stop-opacity:1"
+         offset="0"
+         id="stop4138" />
+      <stop
+         style="stop-color:#87c4ff;stop-opacity:1"
+         offset="1"
+         id="stop4140" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4136"
+       id="linearGradient4142"
+       x1="384"
+       y1="620.36206"
+       x2="384"
+       y2="1052.3621"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4155"
+       id="linearGradient4161"
+       x1="384"
+       y1="568"
+       x2="384"
+       y2="600"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       y2="1"
+       x2="0"
+       y1="0"
+       x1="0"
+       id="pattern-mountain">
+      <stop
+         id="stop29"
+         stop-color="#fff"
+         offset="0" />
+      <stop
+         id="stop31"
+         stop-color="#fff"
+         offset="0.1" />
+      <stop
+         id="stop33"
+         stop-color="#888"
+         offset="0.3" />
+      <stop
+         id="stop35"
+         stop-color="#444"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-mountain"
+       id="linearGradient3634"
+       x1="-162.39789"
+       y1="1154.7609"
+       x2="-162.39789"
+       y2="1590.5739"
+       gradientTransform="matrix(1.3165548,0,0,0.47726888,13.805715,-183.13141)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-mountain"
+       id="linearGradient3636"
+       x1="149.54414"
+       y1="1107.9209"
+       x2="149.54414"
+       y2="1504.2217"
+       gradientTransform="matrix(1.2450791,0,0,0.50466725,13.805715,-183.13141)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-mountain"
+       id="linearGradient3638"
+       x1="380.85208"
+       y1="879.22729"
+       x2="380.85208"
+       y2="1326.5898"
+       gradientTransform="matrix(1.0980491,0,0,0.57224274,13.805715,-183.13141)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-mountain"
+       id="linearGradient3640"
+       x1="-84.097427"
+       y1="836.34717"
+       x2="-84.097427"
+       y2="1347.6014"
+       gradientTransform="matrix(1.1154409,0,0,0.5633204,13.805715,-183.13141)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       y2="1"
+       x2="0"
+       y1="0"
+       x1="0"
+       id="pattern-hill">
+      <stop
+         id="stop38"
+         stop-color="#4c4"
+         offset="0" />
+      <stop
+         id="stop40"
+         stop-color="#080"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-hill"
+       id="linearGradient3644"
+       x1="170.36061"
+       y1="2041.9103"
+       x2="170.36061"
+       y2="2304.1001"
+       gradientTransform="matrix(1.9355619,0,0,0.33563479,-1.7434982,-197.33614)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-hill"
+       id="linearGradient3646"
+       x1="68.884987"
+       y1="1310.2104"
+       x2="68.884987"
+       y2="1550.8604"
+       gradientTransform="matrix(1.302802,0,0,0.49864976,-1.7434982,-197.33614)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-hill"
+       id="linearGradient3648"
+       x1="-44.385571"
+       y1="1689.3302"
+       x2="-44.385571"
+       y2="1884.2522"
+       gradientTransform="matrix(1.5828681,0,0,0.41042073,-1.7434982,-197.33614)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-hill"
+       id="linearGradient3650"
+       x1="283.91199"
+       y1="1756.3678"
+       x2="283.91199"
+       y2="1852.1693"
+       gradientTransform="matrix(1.555917,0,0,0.41752993,-1.7434982,-197.33614)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pattern-hill"
+       id="linearGradient3652"
+       x1="410.48492"
+       y1="1689.3302"
+       x2="410.48492"
+       y2="1884.2522"
+       gradientTransform="matrix(1.5828681,0,0,0.41042073,-1.7434982,-197.33614)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-bullet"
+       id="radialGradient3401"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad"
+       cx="-1.2"
+       cy="-1.2"
+       r="3.5999999"
+       fx="-1.2"
+       fy="-1.2"
+       gradientTransform="matrix(1.1428573,0,0,1.1428573,319.99994,200.00003)" />
+    <radialGradient
+       id="gradient-bullet"
+       gradientUnits="objectBoundingBox"
+       cx="0.2"
+       cy="0.2"
+       r="0.89999998"
+       spreadMethod="pad">
+      <stop
+         offset="0"
+         stop-color="#fff"
+         id="stop46" />
+      <stop
+         offset="0.1"
+         stop-color="#fff"
+         id="stop48" />
+      <stop
+         offset="1"
+         stop-color="#888"
+         id="stop50" />
+    </radialGradient>
+    <linearGradient
+       id="gradient-prop"
+       gradientUnits="objectBoundingBox"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#000"
+         stop-opacity="0.4"
+         id="stop11" />
+      <stop
+         offset="0.5"
+         stop-color="#000"
+         stop-opacity="1"
+         id="stop13" />
+      <stop
+         offset="1"
+         stop-color="#000"
+         stop-opacity="0.5"
+         id="stop15" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#cloud-3"
+       id="radialGradient8384"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.89208234,0,0,-0.70092179,200.92082,62.334111)"
+       cx="10.000002"
+       cy="-105.09861"
+       fx="10.000002"
+       fy="-105.09861"
+       r="125.54895" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-prop"
+       id="linearGradient3431-3"
+       gradientUnits="userSpaceOnUse"
+       x1="60.10405"
+       y1="-2.1836405"
+       x2="60.104198"
+       y2="1.8716795"
+       gradientTransform="matrix(0.40070635,0,0,3.2056507,445.91586,271.00006)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-plane-6"
+       id="linearGradient4285"
+       x1="438"
+       y1="272"
+       x2="438"
+       y2="275"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-plane-6"
+       id="linearGradient4293"
+       x1="451"
+       y1="274"
+       x2="451"
+       y2="276"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-plane-6"
+       id="linearGradient4301"
+       x1="456"
+       y1="260"
+       x2="456"
+       y2="262"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-plane-6"
+       id="linearGradient4309"
+       x1="432"
+       y1="270"
+       x2="432"
+       y2="271"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#metal-7"
+       id="linearGradient4317"
+       x1="456"
+       y1="265"
+       x2="456"
+       y2="267"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#metal-7"
+       id="radialGradient4349"
+       cx="456"
+       cy="279"
+       fx="456"
+       fy="279"
+       r="2.5000057"
+       gradientTransform="matrix(-1.5999807,1.036907e-5,-1.0369151e-5,-1.5999932,1185.5941,725.39339)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#metal-7"
+       id="radialGradient4351"
+       cx="464"
+       cy="269.8125"
+       fx="464"
+       fy="269.8125"
+       r="1.375"
+       gradientTransform="matrix(-2.1818278,-7.1006743e-6,1.1834312e-5,-3.6363304,1476.3649,1250.1307)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#metal-7"
+       id="radialGradient4349-5"
+       cx="456"
+       cy="279"
+       fx="456"
+       fy="279"
+       r="2.5000057"
+       gradientTransform="matrix(-1.5999807,1.036907e-5,-1.0369151e-5,-1.5999932,1225.5941,637.3934)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-cloud-3"
+       id="radialGradient4263"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.55609758,0,0,-0.63720163,197.56097,69.031011)"
+       cx="10.000002"
+       cy="-105.09861"
+       fx="10.000002"
+       fy="-105.09861"
+       r="125.54895" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-cloud-3"
+       id="radialGradient4265"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.55609758,0,0,-0.63720163,197.56097,69.031011)"
+       cx="10.000002"
+       cy="-105.09861"
+       fx="10.000002"
+       fy="-105.09861"
+       r="125.54895" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-cloud-3"
+       id="radialGradient4267"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.55609758,0,0,-0.63720163,197.56097,69.031011)"
+       cx="10.000002"
+       cy="-105.09861"
+       fx="10.000002"
+       fy="-105.09861"
+       r="125.54895" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-cloud-3"
+       id="radialGradient4269"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.55609758,0,0,-0.63720163,197.56097,69.031011)"
+       cx="10.000002"
+       cy="-105.09861"
+       fx="10.000002"
+       fy="-105.09861"
+       r="125.54895" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#cloud-3"
+       id="radialGradient4276"
+       cx="379"
+       cy="183.18002"
+       fx="379"
+       fy="183.18002"
+       r="18.449987"
+       gradientTransform="matrix(-1.2466126,1.5361581e-6,-1.755146e-6,-1.4092135,845.46645,442.13922)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.93102395"
+     inkscape:cx="506.73271"
+     inkscape:cy="307.3332"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer5"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     units="px"
+     guidetolerance="20"
+     inkscape:snap-tangential="false"
+     inkscape:snap-perpendicular="false"
+     objecttolerance="20"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-others="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-smooth-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4042"
+       spacingx="1"
+       spacingy="1"
+       empspacing="8"
+       snapvisiblegridlinesonly="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4039">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="sky"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-452.36205)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:url(#linearGradient4142);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3334"
+       width="800"
+       height="600"
+       x="0"
+       y="452.36206"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/sky.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="mountains"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3634);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path155"
+       d="M -232,576 55.999999,368.00001 336,576"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/mountains.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3636);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path157"
+       d="m 168,576 239.99999,-167.99999 15.85371,-23.78057 40.14629,-8.21943 192,199.99999"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/mountains.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3638);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path159"
+       d="m 400,576 167.99999,-207.99999 80,-48 40,16 80,8 128,231.99999"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/mountains.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3640);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path161"
+       d="m -112,576 280,-287.99999 56,56 32,-16 72,80 L 455.99999,576"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/mountains.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="foothills"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3644);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path164"
+       d="M 312,576 C 479.99999,456 647.99999,456 807.99999,576"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/hills.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3646);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path166"
+       d="M 71.999999,576 C 184,408.00001 296,408.00001 407.99999,576"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/hills.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3648);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path168"
+       d="M -79.999999,576 C 24,464 112,464 216,576"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/hills.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3650);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path170"
+       d="m 431.99999,576 c 56,-56 120,-56 176,0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/hills.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#linearGradient3652);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path172"
+       d="m 631.99999,576 c 112,-112 232,-112 344,0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/hills.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="ground"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:url(#linearGradient4161);fill-opacity:1;stroke:none"
+       id="rect4145"
+       width="800"
+       height="32"
+       x="0"
+       y="568"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/ground.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect4163"
+       width="800"
+       height="2.000001"
+       x="0"
+       y="568"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/ground.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="clouds"
+     style="display:inline">
+    <g
+       id="g4284">
+      <path
+         id="path7524"
+         d="m 130.82926,190.24392 q -16.68293,-5.56098 -8.34146,-22.24391 -5.56098,-16.68292 11.12195,-22.2439 5.56098,-16.68293 22.2439,-11.12195 16.68293,-11.12195 27.80488,2.78049 16.68293,-11.12195 27.80488,5.56097 19.46342,-5.56097 22.2439,11.12195 19.46342,-2.78048 16.68293,16.68293 13.90244,11.12195 0,22.24391 2.78049,13.90243 -13.90244,13.90243 -11.12195,13.90244 -25.02439,2.78049 -11.12195,11.12195 -22.2439,0 -11.12195,13.90244 -22.24391,2.78049 -13.90243,8.34146 -22.2439,-5.56098 -19.46341,-2.78048 -13.90244,-16.68292 z"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient8384);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7526"
+         d="m 141.95121,173.56099 q -2.78048,-8.34146 5.56098,-11.12195 0,-13.90244 11.12195,-11.12195 5.56098,-11.12195 16.68293,-2.78049"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient4263);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7528"
+         d="m 208.68292,195.80489 q 11.12195,5.56098 13.90244,-5.56097 13.90244,0 11.12195,-13.90244"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient4265);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7530"
+         d="m 164.19512,190.24392 q 8.34146,8.34146 16.68292,2.78049"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient4267);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7532"
+         d="m 192,168.00001 q 8.34146,-11.12195 16.68292,-5.56097"
+         inkscape:connector-curvature="0"
+         style="fill:url(#radialGradient4269);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="planes"
+     style="display:inline">
+    <ellipse
+       class="machinery wheel"
+       style="color:#ff0000;fill:#888888;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="434"
+       cy="275"
+       id="circle3411-2-2"
+       rx="1.0000054"
+       ry="1.0000198"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <circle
+       class="pilot"
+       style="color:#ff0000;fill:#aa6622;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="444"
+       cy="266"
+       r="2.8334217"
+       id="circle3405-3"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 450.99999,274.00001 5,6"
+       id="line3407-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 459.99999,274.00001 -4,6"
+       id="line3409-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <ellipse
+       class="machinery wheel"
+       style="color:#ff0000;fill:url(#radialGradient4349);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="456"
+       cy="280"
+       id="circle3411-2"
+       rx="2.0000057"
+       ry="1.9999893"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       inkscape:connector-curvature="0"
+       class="fuselage"
+       d="m 439.99999,266.00001 c 3.02232,3.02231 6.46653,3.02231 11,0 l 9,0 c 2,0 3,2 3,3 l 0,3 c 0,1 -1,3 -3,3 l -23,0 c -5,0 -9.18275,-3 -9,-7 l 0.1339,-2.93085 c 0.18275,-4 3.8661,-5.06915 6.8661,1.93085 z"
+       style="color:#ff0000;fill:url(#linearGradient4285);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3413-9"
+       sodipodi:nodetypes="cccccccsscc"
+       transform="translate(4.5375e-6,8.3333293e-7)"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       inkscape:connector-curvature="0"
+       class="machinery"
+       style="color:#ff0000;fill:url(#radialGradient4351);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 462.99999,268.00001 c 3,0 3,5 0,5"
+       id="path3427-6"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       inkscape:connector-curvature="0"
+       class="wing"
+       d="m 429.99999,271.00001 c -3,0 -3,-2 0,-2 l 4,0 c 3,0 3,2 0,2 z"
+       style="color:#ff0000;fill:url(#linearGradient4309);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3415-1"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <rect
+       class="machinery gun"
+       style="color:#ff0000;fill:url(#linearGradient4317);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="452"
+       y="264"
+       width="9.0000057"
+       height="2.9999888"
+       id="rect3417-2"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 454.99999,274.00001 5,-14"
+       id="line3421-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 446.99999,274.00001 5,-14"
+       id="line3419-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <path
+       inkscape:connector-curvature="0"
+       class="wing"
+       d="m 445.99999,276.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+       style="color:#ff0000;fill:url(#linearGradient4293);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3425-3"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+    <rect
+       class="machinery propellor"
+       style="color:#ff0000;fill:url(#linearGradient3431-3);stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="469"
+       y="264"
+       width="2.0000057"
+       height="12.999989"
+       id="rect3429-0">
+      <set
+         id="animProp"
+         attributeType="CSS"
+         attributeName="opacity"
+         to="0.7"
+         begin="0s;animProp.end+0.1s"
+         dur="0.1s" />
+    </rect>
+    <path
+       inkscape:connector-curvature="0"
+       class="wing"
+       d="m 450.99999,262.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+       style="color:#ff0000;fill:url(#linearGradient4301);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3425-3-6"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/plane.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="action!"
+     style="display:inline">
+    <ellipse
+       style="color:#ff0000;fill:url(#radialGradient3401);stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="320"
+       cy="200.00002"
+       id="circle3397"
+       rx="2.000006"
+       ry="1.9999888"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/bullet.png"
+       inkscape:export-xdpi="288"
+       inkscape:export-ydpi="288" />
+    <g
+       id="g4278"
+       inkscape:export-xdpi="156.09772"
+       inkscape:export-ydpi="156.09772">
+      <path
+         inkscape:connector-curvature="0"
+         id="path96"
+         d="m 356,193.00001 q -3,-7 4,-9 -1,-4 3,-5 3,-4 8,-1 4,-3 7,0 6,-2 7,5 5,0 4,6 4,4 0,7 2,5 -4,6 0,6 -7,6 -3,3 -6,-1 -5,3 -7,-2 -3,0 -4,-3 -8,-4 -5,-9 z"
+         style="fill:url(#radialGradient4276);fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path98"
+         d="m 373,184.00001 q 4,-3 5,2"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path100"
+         d="m 384,192.00001 q 3,2 -1,4 1,5 -4,4"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path102"
+         d="m 363,191.00001 q -3,2 1,5 -1,4 4,4 1,4 5,2"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       id="path104"
+       d="m 396.60643,189.50001 10,-2 -3,-8 8,2 4,-7 3,7 7,-4 -1,7 11,2 -7,5 7,8 -11,0 2,11 -9,-7 -3,8 -4,-9 -9,0 3,-7 z"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/expl_outer.png"
+       inkscape:export-xdpi="156.09772"
+       inkscape:export-ydpi="156.09772" />
+    <path
+       style="fill:#ffff00;stroke:#000000;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       id="path106"
+       d="m 445.60643,192.50001 -3,-3 4,0 1,-4 3,3 3,-2 0,4 4,2 -3,2 1,3 -4,0 -3,3 -1,-4 -4,-1 z"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/expl_inner.png"
+       inkscape:export-xdpi="156.09772"
+       inkscape:export-ydpi="156.09772" />
+    <g
+       id="g4245"
+       transform="translate(25.000004,-61.999997)"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/debris_prop.png"
+       inkscape:export-xdpi="141.6073"
+       inkscape:export-ydpi="141.6073">
+      <path
+         sodipodi:nodetypes="csscssc"
+         style="fill:#955900;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 478.99999,270.00001 -1,-5 c -0.39764,-1.98821 3.39765,-1.98821 3,0 l -1,5 1,5 c 0.39765,1.98821 -3.39764,1.98821 -3,0 z"
+         id="path110"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="1.9999889"
+         rx="2.000006"
+         cx="479.4993"
+         cy="270"
+         id="circle112"
+         style="fill:#888888;stroke:#000000;stroke-opacity:1" />
+    </g>
+    <ellipse
+       class="machinery wheel"
+       style="color:#ff0000;display:inline;fill:url(#radialGradient4349-5);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       cx="496"
+       cy="192.00002"
+       id="circle3411-2-6"
+       rx="2.0000057"
+       ry="1.9999893"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/debris_wheel.png"
+       inkscape:export-xdpi="149.61"
+       inkscape:export-ydpi="149.61" />
+  </g>
+</svg>
