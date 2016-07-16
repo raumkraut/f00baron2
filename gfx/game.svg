@@ -262,11 +262,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.94045202"
-     inkscape:cx="356.39857"
-     inkscape:cy="299.06568"
+     inkscape:zoom="21.28"
+     inkscape:cx="440.59763"
+     inkscape:cy="325.19903"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer7"
      showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="991"
@@ -488,17 +488,6 @@
      id="layer7"
      inkscape:label="planes"
      style="display:inline">
-    <ellipse
-       class="machinery wheel"
-       style="color:#ff0000;fill:#888888;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       cx="434"
-       cy="275"
-       id="circle3411-2-2"
-       rx="1.0000054"
-       ry="1.0000198"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <circle
        class="pilot"
        style="color:#ff0000;fill:#aa6622;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -506,106 +495,7 @@
        cy="266"
        r="2.8334217"
        id="circle3405-3"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 450.99999,274.00001 5,6"
-       id="line3407-5"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 459.99999,274.00001 -4,6"
-       id="line3409-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <ellipse
-       class="machinery wheel"
-       style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       cx="456"
-       cy="280"
-       id="circle3411-2"
-       rx="2.0000057"
-       ry="1.9999893"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:connector-curvature="0"
-       class="fuselage"
-       d="m 439.99999,266.00001 c 3.02232,3.02231 6.46653,3.02231 11,0 l 9,0 c 2,0 3,2 3,3 l 0,3 c 0,1 -1,3 -3,3 l -23,0 c -5,0 -9.18275,-3 -9,-7 l 0.1339,-2.93085 c 0.18275,-4 3.8661,-5.06915 6.8661,1.93085 z"
-       style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3413-9"
-       sodipodi:nodetypes="cccccccsscc"
-       transform="translate(4.5375e-6,8.3333293e-7)"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:connector-curvature="0"
-       class="machinery"
-       style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 462.99999,268.00001 c 3,0 3,5 0,5"
-       id="path3427-6"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:connector-curvature="0"
-       class="wing"
-       d="m 429.99999,271.00001 c -3,0 -3,-2 0,-2 l 4,0 c 3,0 3,2 0,2 z"
-       style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3415-1"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <rect
-       class="machinery gun"
-       style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="452"
-       y="264"
-       width="9.0000057"
-       height="2.9999888"
-       id="rect3417-2"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 454.99999,274.00001 5,-14"
-       id="line3421-0"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 446.99999,274.00001 5,-14"
-       id="line3419-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:connector-curvature="0"
-       class="wing"
-       d="m 445.99999,276.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
-       style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3425-3"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/pilot.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <rect
@@ -627,16 +517,149 @@
          begin="0s;animProp.end+0.1s"
          dur="0.1s" />
     </rect>
-    <path
-       inkscape:connector-curvature="0"
-       class="wing"
-       d="m 450.99999,262.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
-       style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3425-3-6"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/plane.png"
+    <g
+       id="g4277"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
        inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
+       inkscape:export-ydpi="300">
+      <ellipse
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+         ry="1.0000198"
+         rx="1.0000054"
+         id="circle3411-2-2"
+         cy="275"
+         cx="434"
+         style="color:#ff0000;fill:#888888;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="machinery wheel" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="line3407-5"
+         d="m 450.99999,274.00001 5,6"
+         style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="line3409-6"
+         d="m 459.99999,274.00001 -4,6"
+         style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+         ry="1.9999893"
+         rx="2.0000057"
+         id="circle3411-2"
+         cy="280"
+         cx="456"
+         style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="machinery wheel" />
+    </g>
+    <g
+       id="g4263"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+         sodipodi:nodetypes="cccccccsscc"
+         id="path3413-9"
+         style="color:#ff0000;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 439.99999,266.00001 c 3.02232,3.02231 6.46653,3.02231 11,0 l 9,0 c 2,0 3,2 3,3 l 0,3 c 0,1 -1,3 -3,3 l -23,0 c -5,0 -9.18275,-3 -9,-7 l 0.1339,-2.93085 c 0.18275,-4 3.8661,-5.06915 6.8661,1.93085 z"
+         class="fuselage"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+         sodipodi:nodetypes="ccccc"
+         id="path3415-1"
+         style="color:#ff0000;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 429.99999,271.00001 c -3,0 -3,-2 0,-2 l 4,0 c 3,0 3,2 0,2 z"
+         class="wing"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4273"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinery.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinerypng"
+         id="rect3417-2"
+         height="2.9999888"
+         width="9.0000057"
+         y="264"
+         x="452"
+         style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="machinery gun" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinerypng"
+         sodipodi:nodetypes="cc"
+         id="path3427-6"
+         d="m 462.99999,268.00001 c 3,0 3,5 0,5"
+         style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="machinery"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4267"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="line3419-7"
+         d="m 446.99999,274.00001 5,-14"
+         style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="line3421-0"
+         d="m 454.99999,274.00001 5,-14"
+         style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+         sodipodi:nodetypes="ccccc"
+         id="path3425-3"
+         style="color:#ff0000;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 445.99999,276.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+         class="wing"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+         sodipodi:nodetypes="ccccc"
+         id="path3425-3-6"
+         style="color:#ff0000;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 450.99999,262.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+         class="wing"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
