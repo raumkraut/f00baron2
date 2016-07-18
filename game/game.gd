@@ -27,6 +27,19 @@ func _process(delta):
 	player1.set_firing(Input.is_action_pressed("p1_fire"))
 	# Player 2
 	## TODO
-	# Check for planes going out of bounds
-	## TODO
+	
+
+func _on_airspace_body_exit( body ):
+	# Something physics-al has left the arena
+	var arena = get_node("airspace/playground")
+	var half_width = arena.get_shape().get_extents().x
+	var left = arena.get_pos().x - half_width
+	var right = arena.get_pos().x + half_width
+	var pos = body.get_pos()
+	if pos.x < left:
+		pos.x = right
+		body.set_pos(pos)
+	elif pos.x > right:
+		pos.x = left
+		body.set_pos(pos)
 	
