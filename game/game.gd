@@ -25,8 +25,20 @@ func _process(delta):
 	else:
 		player1.set_pitching(0)
 	player1.set_firing(Input.is_action_pressed("p1_fire"))
+	
 	# Player 2
-	## TODO
+	var player2 = get_node("airspace/player2")
+	if Input.is_action_pressed("p2_throttle_up"):
+		player2.set_throttle(1)
+	elif Input.is_action_pressed("p2_throttle_down"):
+		player2.set_throttle(0)
+	if Input.is_action_pressed("p2_clockwise"):
+		player2.set_pitching(1)
+	elif Input.is_action_pressed("p2_anticlockwise"):
+		player2.set_pitching(-1)
+	else:
+		player2.set_pitching(0)
+	player2.set_firing(Input.is_action_pressed("p2_fire"))
 	
 
 func _on_airspace_body_exit( body ):
