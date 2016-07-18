@@ -19,9 +19,9 @@ func _process(delta):
 	elif Input.is_action_pressed("p1_throttle_down"):
 		player1.set_throttle(0)
 	if Input.is_action_pressed("p1_clockwise"):
-		player1.set_pitching(-1)
-	elif Input.is_action_pressed("p1_anticlockwise"):
 		player1.set_pitching(1)
+	elif Input.is_action_pressed("p1_anticlockwise"):
+		player1.set_pitching(-1)
 	else:
 		player1.set_pitching(0)
 	player1.set_firing(Input.is_action_pressed("p1_fire"))
