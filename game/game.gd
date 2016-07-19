@@ -1,6 +1,8 @@
 
 extends Node2D
 
+var debug_display
+
 func _init():
 	randomize()
 
@@ -9,8 +11,11 @@ func _ready():
 	get_node("airspace/player1").set_colour('ff0000')
 	get_node("airspace/player2").set_colour('aa88ff')
 	set_process(true)
-	
+	debug_display = get_node('hud/debug')
 
+func debug(string):
+	debug_display.set_text(str(string))
+	
 func _process(delta):
 	# Tell the planes what to do
 	var player1 = get_node("airspace/player1")

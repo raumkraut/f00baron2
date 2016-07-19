@@ -6,9 +6,10 @@ var throttle = 0
 var pitching = 0
 var firing = false
 # Flight parameters
-var perpendicular_damp = 12
-var turn_rate = 3
-var thrust = 150
+var perpendicular_damp = 8
+var turn_rate = 4
+var min_turn_rate = 0.6
+var thrust = 160
 var stall_speed = 40
 var full_lift_speed = 200
 
@@ -40,7 +41,7 @@ func set_pitching(neeow):
 		neeow = -1
 	elif neeow > 1:
 		neeow = 1
-	set_angular_velocity(neeow * turn_rate)
+	pitching = neeow
 	
 func set_firing(dakka):
 	""" Dakkadakka! """
@@ -56,10 +57,12 @@ func _integrate_forces(state):
 	var facing = Vector2(1, 0).rotated(get_rot())
 	# Standard engine force
 	set_applied_force(facing * throttle * thrust)
-	
 	# How fast we're going determines how well we manoeuvre
 	var speed = velocity.dot(facing)
 	var lift_effect = min(1, max(0, speed - stall_speed) / (full_lift_speed - stall_speed))
+	if abs(speed) > 1:
+		# Only turn after we've started moving
+		set_angular_velocity(pitching * max(turn_rate * lift_effect, min_turn_rate))
 	# Re-angle the forward velocity
 	velocity = velocity.rotated(-state.get_angular_velocity() * delta * lift_effect)
 	# Apply extra drag perpendicular to the facing
