@@ -1,5 +1,5 @@
 
-extends CollisionPolygon2D
+extends Node2D
 
 # The opacity of the propellor when it's not fully visible
 var prop_opacity = 0.7

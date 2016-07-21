@@ -1,6 +1,10 @@
 
 extends RigidBody2D
 
+# Initial positioning
+onready var spawn_pos = get_pos()
+onready var spawn_rot = get_rot()
+onready var undercarriage_shapes = range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
 # Flight controls
 var throttle = 0
 var pitching = 0
@@ -12,20 +16,35 @@ var min_turn_rate = 0.6
 var thrust = 160
 var stall_speed = 40
 var full_lift_speed = 200
+# These determine the max impact we can endure
+var undercarriage_strength = 40
+var airframe_strength = 10
+
+signal player_death(player, killer)
 
 
 func _ready():
 	# RigidBody2D cannot into scaling,
-	# so we need to flip the graphic when asked to
-	var plane = get_node('plane')
-	plane.set_scale(plane.get_scale() * get_scale())
+	# so we need to flip when asked to
+	for node in get_children():
+		node.set_scale(node.get_scale() * get_scale())
 	set_scale(Vector2(1, 1))
-	
 
 func set_colour(colour):
 	""" Set the colour of this player """
 	# The plane is all that matters ATM
 	return get_node('plane').set_colour(colour)
+
+func respawn():
+	""" Restore the player to its initial state """
+	throttle = 0
+	pitching = 0
+	firing = 0
+	set_pos(spawn_pos)
+	set_rot(spawn_rot)
+	set_applied_force(Vector2())
+	set_linear_velocity(Vector2())
+	set_angular_velocity(0)
 
 func set_throttle(brum):
 	""" Full speed ahead! Or... not. """
@@ -73,4 +92,28 @@ func _integrate_forces(state):
 	state.set_linear_velocity(velocity + perp_reaction)
 	
 
+func _on_player_body_enter_shape( body_id, body, body_shape, local_shape ):
+	""" A player has hit something, or vice versa """
+	# Work out the impact velocity
+	var impact_v = get_linear_velocity()
+	if body.is_type('StaticBody2D'):
+		impact_v -= body.get_constant_linear_velocity()
+	elif body.is_type('RigidBody2D'):
+		impact_v -= body.get_linear_velocity()
+		
+	if body.is_in_group('floor'):
+		# Only direct impact speed matters against floors
+		impact_v = Vector2(impact_v.dot(Vector2(0, 1)), 0)
+		
+	# Work out the toughness of the bit that was hit
+	var strength
+	if local_shape in undercarriage_shapes:
+		strength = undercarriage_strength
+	else:
+		strength = airframe_strength
+	
+	if impact_v.length_squared() > pow(strength, 2):
+		emit_signal('player_death', self, body)
+		
+	
 ## TODO: Shooooooooooot!

@@ -60,3 +60,10 @@ func _on_airspace_body_exit( body ):
 		pos.x = left
 		body.set_pos(pos)
 	
+
+
+func _on_player_death( player, killer ):
+	""" A player is kill """
+	## TODO: BOOM!
+	## TODO: SCORE!
+	player.respawn()
