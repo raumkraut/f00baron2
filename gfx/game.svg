@@ -263,10 +263,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.32"
-     inkscape:cx="444.45107"
-     inkscape:cy="368.22468"
+     inkscape:cx="46.258971"
+     inkscape:cy="82.504488"
      inkscape:document-units="px"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer8"
      showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="991"
@@ -330,7 +330,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="mountains"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient3634);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
@@ -372,7 +373,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="foothills"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient3644);stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
@@ -423,7 +425,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="ground"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="opacity:1;fill:url(#linearGradient4161);fill-opacity:1;stroke:none"
        id="rect4145"
@@ -482,6 +485,27 @@
          inkscape:connector-curvature="0"
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="runway">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 24,568 0,-64"
+       id="path4226"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenery/flagpole.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="M 24,504 47.999999,512 24,528 24,504"
+       id="path4228"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenery/flag.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
   <g
      inkscape:groupmode="layer"

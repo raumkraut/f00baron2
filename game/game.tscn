@@ -1,19 +1,15 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
 [ext_resource path="res://scenery/background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenery/cloud.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenery/flag.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenery/cloud.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 420, 320 )
-
-[sub_resource type="RectangleShape2D" id=4]
-
-custom_solver_bias = 0.0
-extents = Vector2( 450, 20 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -24,6 +20,11 @@ extents = Vector2( 450, 80 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 450, 15 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 450, 20 )
 
 [node name="game" type="Node2D"]
 
@@ -47,26 +48,6 @@ collision/layers = 1024
 
 transform/pos = Vector2( 400, 250 )
 shape = SubResource( 1 )
-trigger = true
-_update_shape_index = 0
-
-[node name="runway" type="Area2D" parent="airspace"]
-
-transform/pos = Vector2( 400, 550 )
-input/pickable = true
-shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-collision/layers = 1024
-collision/mask = 0
-
-[node name="collider" type="CollisionShape2D" parent="airspace/runway"]
-
-shape = SubResource( 4 )
 trigger = true
 _update_shape_index = 0
 
@@ -125,21 +106,53 @@ collision/layers = 0
 collision/mask = 1027
 flipped = true
 
+[node name="runway" type="Area2D" parent="airspace"]
+
+transform/pos = Vector2( 400, 550 )
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision/layers = 1024
+collision/mask = 0
+
+[node name="collider" type="CollisionShape2D" parent="airspace/runway"]
+
+shape = SubResource( 4 )
+trigger = true
+_update_shape_index = 0
+
+[node name="flag1" parent="airspace/runway" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -381.079, 1.77378 )
+transform/scale = Vector2( 0.2, 0.2 )
+colour = Color( 1, 0, 0, 1 )
+
+[node name="flag2" parent="airspace/runway" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 374.932, 1.77378 )
+transform/scale = Vector2( 0.2, 0.2 )
+colour = Color( 0.666667, 0.533333, 1, 1 )
+
 [node name="clouds" type="VisibilityNotifier2D" parent="."]
 
 rect = Rect2( -87, 100, 975, 330 )
 
-[node name="cloud1" parent="clouds" instance=ExtResource( 4 )]
+[node name="cloud1" parent="clouds" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 184.687, 425.499 )
 transform/scale = Vector2( 0.7, 0.7 )
 
-[node name="cloud2" parent="clouds" instance=ExtResource( 4 )]
+[node name="cloud2" parent="clouds" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 719.981, 98.9208 )
 transform/scale = Vector2( 0.7, 0.7 )
 
-[node name="cloud3" parent="clouds" instance=ExtResource( 4 )]
+[node name="cloud3" parent="clouds" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -84.1877, 162.763 )
 transform/scale = Vector2( 0.7, 0.7 )
@@ -163,10 +176,10 @@ max_lines_visible = -1
 
 [connection signal="body_exit" from="airspace" to="." method="_on_airspace_body_exit"]
 
-[connection signal="body_exit" from="airspace/runway" to="." method="_on_runway_body_exit"]
-
 [connection signal="player_death" from="airspace/player1" to="." method="_on_player_death"]
 
 [connection signal="player_death" from="airspace/player2" to="." method="_on_player_death"]
+
+[connection signal="body_exit" from="airspace/runway" to="." method="_on_runway_body_exit"]
 
 
