@@ -22,15 +22,18 @@ var airframe_strength = 10
 # Personalisation
 var fuselage_colour = Color('ffffff')
 
+export var flipped = false
+
 signal player_death(player, killer)
 
 
 func _ready():
 	# RigidBody2D cannot into scaling,
 	# so we need to flip when asked to
-	for node in get_children():
-		node.set_scale(node.get_scale() * get_scale())
-	set_scale(Vector2(1, 1))
+	if flipped:
+		for node in get_children():
+			node.set_scale(node.get_scale() * Vector2(1, -1))
+	
 
 func get_colour():
 	""" Get the primary colour of this player """

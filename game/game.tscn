@@ -92,7 +92,7 @@ transform/rot = 15.0
 
 transform/pos = Vector2( 756.12, 558.057 )
 transform/rot = 165.0
-transform/scale = Vector2( 1, -1 )
+flipped = true
 
 [node name="clouds" type="VisibilityNotifier2D" parent="."]
 

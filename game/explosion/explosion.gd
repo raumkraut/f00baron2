@@ -1,14 +1,13 @@
 
 extends Node2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+export var flipped = false
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+	# Flip the debris when appropriate
+	if flipped:
+		for node in get_node('debris').get_children():
+			node.set_linear_velocity(node.get_linear_velocity() * Vector2(-1, 1))
 
 func set_velocity(velocity):
 	""" Apply the given velocity vector to the debris """
