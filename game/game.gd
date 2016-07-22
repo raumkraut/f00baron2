@@ -4,6 +4,13 @@ extends Node2D
 var debug_display
 onready var explosion = preload('res://explosion/explosion.tscn')
 
+# Physics collision layers
+const collision_layer_players = 0
+const collision_layer_bullets = 1
+const collision_layer_scenery = 10
+const collision_layer_debris = 11
+
+
 func _init():
 	randomize()
 
@@ -49,7 +56,7 @@ func _process(delta):
 
 func _on_airspace_body_exit( body ):
 	# Something physics-al has left the arena
-	var arena = get_node("airspace/playground")
+	var arena = get_node("airspace/collider")
 	var half_width = arena.get_shape().get_extents().x
 	var left = arena.get_pos().x - half_width
 	var right = arena.get_pos().x + half_width
@@ -62,9 +69,16 @@ func _on_airspace_body_exit( body ):
 		body.set_pos(pos)
 	
 
+func _on_runway_body_exit( body ):
+	if body.is_in_group('players'):
+		# Set the airborne player to collidable
+		body.set_layer_mask_bit(collision_layer_players, true)
+		
+
 
 func _on_player_death( player, killer ):
 	""" A player is kill """
+	# Show an explosion
 	var boom = explosion.instance()
 	boom.set_colour(player.get_colour())
 	boom.set_pos(player.get_pos())
@@ -72,4 +86,6 @@ func _on_player_death( player, killer ):
 	boom.flipped = player.flipped
 	get_node('clouds').add_child(boom)
 	## TODO: SCORE!
+	# Fetch me a fresh plane!
+	player.set_layer_mask_bit(collision_layer_players, false)
 	player.respawn()

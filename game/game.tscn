@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
 [ext_resource path="res://scenery/background.tscn" type="PackedScene" id=2]
@@ -8,7 +8,12 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 420, 300 )
+extents = Vector2( 420, 320 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 450, 20 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -30,18 +35,38 @@ script/script = ExtResource( 1 )
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 400, 270 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 400, 250 )
 shapes/0/trigger = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision/layers = 0
+collision/layers = 1024
 
-[node name="playground" type="CollisionShape2D" parent="airspace"]
+[node name="collider" type="CollisionShape2D" parent="airspace"]
 
-transform/pos = Vector2( 400, 270 )
+transform/pos = Vector2( 400, 250 )
 shape = SubResource( 1 )
+trigger = true
+_update_shape_index = 0
+
+[node name="runway" type="Area2D" parent="airspace"]
+
+transform/pos = Vector2( 400, 550 )
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision/layers = 1024
+collision/mask = 0
+
+[node name="collider" type="CollisionShape2D" parent="airspace/runway"]
+
+shape = SubResource( 4 )
 trigger = true
 _update_shape_index = 0
 
@@ -57,9 +82,9 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 500.0
 linear_damp = 0.8
 angular_damp = 1.0
-collision/layers = 0
+collision/layers = 1024
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="airspace/ceiling"]
+[node name="collider" type="CollisionShape2D" parent="airspace/ceiling"]
 
 shape = SubResource( 2 )
 trigger = false
@@ -85,16 +110,18 @@ shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 0
 
-[node name="player1" parent="airspace" instance=ExtResource( 3 )]
+[node name="player1" parent="airspace" groups=[ "players" ] instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 38.96, 556.597 )
 transform/rot = 15.0
+collision/layers = 0
 collision/mask = 1027
 
-[node name="player2" parent="airspace" instance=ExtResource( 3 )]
+[node name="player2" parent="airspace" groups=[ "players" ] instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 756.12, 558.057 )
 transform/rot = 165.0
+collision/layers = 0
 collision/mask = 1027
 flipped = true
 
@@ -135,6 +162,8 @@ lines_skipped = 0
 max_lines_visible = -1
 
 [connection signal="body_exit" from="airspace" to="." method="_on_airspace_body_exit"]
+
+[connection signal="body_exit" from="airspace/runway" to="." method="_on_runway_body_exit"]
 
 [connection signal="player_death" from="airspace/player1" to="." method="_on_player_death"]
 
