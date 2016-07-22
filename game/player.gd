@@ -19,6 +19,8 @@ var full_lift_speed = 200
 # These determine the max impact we can endure
 var undercarriage_strength = 40
 var airframe_strength = 10
+# Personalisation
+var fuselage_colour = Color('ffffff')
 
 signal player_death(player, killer)
 
@@ -30,10 +32,15 @@ func _ready():
 		node.set_scale(node.get_scale() * get_scale())
 	set_scale(Vector2(1, 1))
 
+func get_colour():
+	""" Get the primary colour of this player """
+	return fuselage_colour
+	
 func set_colour(colour):
 	""" Set the colour of this player """
+	fuselage_colour = Color(colour)
 	# The plane is all that matters ATM
-	return get_node('plane').set_colour(colour)
+	return get_node('plane').set_colour(fuselage_colour)
 
 func respawn():
 	""" Restore the player to its initial state """

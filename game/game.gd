@@ -2,6 +2,7 @@
 extends Node2D
 
 var debug_display
+onready var explosion = preload('res://explosion/explosion.tscn')
 
 func _init():
 	randomize()
@@ -64,6 +65,9 @@ func _on_airspace_body_exit( body ):
 
 func _on_player_death( player, killer ):
 	""" A player is kill """
-	## TODO: BOOM!
+	var boom = explosion.instance()
+	boom.set_colour(player.get_colour())
+	boom.set_pos(player.get_pos())
+	get_node('clouds').add_child(boom)
 	## TODO: SCORE!
 	player.respawn()
