@@ -97,6 +97,7 @@ transform/pos = Vector2( 38.96, 556.597 )
 transform/rot = 15.0
 collision/layers = 0
 collision/mask = 1027
+fuselage_colour = Color( 1, 0, 0, 1 )
 
 [node name="player2" parent="airspace" groups=[ "players" ] instance=ExtResource( 3 )]
 
@@ -105,6 +106,7 @@ transform/rot = 165.0
 collision/layers = 0
 collision/mask = 1027
 flipped = true
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
 
 [node name="runway" type="Area2D" parent="airspace"]
 

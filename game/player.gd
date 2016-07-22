@@ -6,6 +6,8 @@ onready var spawn_pos = get_pos()
 onready var spawn_rot = get_rot()
 onready var undercarriage_shapes = range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
 export var flipped = false
+# Personalisation
+export var fuselage_colour = Color('ffffff')
 # Flight controls
 var throttle = 0
 var pitching = 0
@@ -20,13 +22,12 @@ var full_lift_speed = 200
 # These determine the max impact we can endure
 var undercarriage_strength = 40
 var airframe_strength = 10
-# Personalisation
-var fuselage_colour = Color('ffffff')
 
 signal player_death(player, killer)
 
 
 func _ready():
+	set_colour(fuselage_colour)
 	# RigidBody2D cannot into scaling,
 	# so we need to flip when asked to
 	if flipped:
@@ -34,10 +35,6 @@ func _ready():
 			node.set_scale(node.get_scale() * Vector2(1, -1))
 	
 
-func get_colour():
-	""" Get the primary colour of this player """
-	return fuselage_colour
-	
 func set_colour(colour):
 	""" Set the colour of this player """
 	fuselage_colour = Color(colour)

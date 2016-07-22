@@ -15,9 +15,6 @@ func _init():
 	randomize()
 
 func _ready():
-	# Set the player colours
-	get_node("airspace/player1").set_colour('ff0000')
-	get_node("airspace/player2").set_colour('aa88ff')
 	set_process(true)
 	debug_display = get_node('hud/debug')
 
@@ -80,7 +77,7 @@ func _on_player_death( player, killer ):
 	""" A player is kill """
 	# Show an explosion
 	var boom = explosion.instance()
-	boom.set_colour(player.get_colour())
+	boom.set_colour(player.fuselage_colour)
 	boom.set_pos(player.get_pos())
 	boom.set_velocity(player.get_linear_velocity())
 	boom.flipped = player.flipped
