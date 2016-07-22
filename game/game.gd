@@ -68,6 +68,7 @@ func _on_player_death( player, killer ):
 	var boom = explosion.instance()
 	boom.set_colour(player.get_colour())
 	boom.set_pos(player.get_pos())
+	boom.set_velocity(player.get_linear_velocity())
 	get_node('clouds').add_child(boom)
 	## TODO: SCORE!
 	player.respawn()
