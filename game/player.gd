@@ -5,6 +5,7 @@ extends RigidBody2D
 onready var spawn_pos = get_pos()
 onready var spawn_rot = get_rot()
 onready var undercarriage_shapes = range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
+export var flipped = false
 # Flight controls
 var throttle = 0
 var pitching = 0
@@ -21,8 +22,6 @@ var undercarriage_strength = 40
 var airframe_strength = 10
 # Personalisation
 var fuselage_colour = Color('ffffff')
-
-export var flipped = false
 
 signal player_death(player, killer)
 

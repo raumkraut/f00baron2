@@ -36,6 +36,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
+collision/layers = 0
 
 [node name="playground" type="CollisionShape2D" parent="airspace"]
 
@@ -56,6 +57,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 500.0
 linear_damp = 0.8
 angular_damp = 1.0
+collision/layers = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="airspace/ceiling"]
 
@@ -70,8 +72,8 @@ input/pickable = false
 shapes/0/shape = SubResource( 3 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1025
-collision/mask = 1025
+collision/layers = 1024
+collision/mask = 3075
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -87,11 +89,13 @@ _update_shape_index = 0
 
 transform/pos = Vector2( 38.96, 556.597 )
 transform/rot = 15.0
+collision/mask = 1027
 
 [node name="player2" parent="airspace" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 756.12, 558.057 )
 transform/rot = 165.0
+collision/mask = 1027
 flipped = true
 
 [node name="clouds" type="VisibilityNotifier2D" parent="."]
