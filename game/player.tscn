@@ -6,12 +6,12 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -60.9819, 4.41177, -59.0444, -24.4512, 55.8264, -39.5607, 67.8365, -15.5405, 67.6428, 27.2697 )
+points = Vector2Array( -43.3327, 20.9146, -60.9819, 4.41177, -59.0444, -24.4512, 55.8264, -39.5607, 67.8365, -15.5405, 67.5027, 27.7352 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -60.9819, 4.41177, 67.6428, 27.2697, 35.2927, 44.51, -41.223, 25.9137 )
+points = Vector2Array( 46.1882, 33.1349, 39.0834, 45.071, -42.7643, 24.8933 )
 
 [node name="player" type="RigidBody2D"]
 
@@ -50,7 +50,7 @@ transform/scale = Vector2( 0.3, 0.3 )
 
 transform/scale = Vector2( 0.3, 0.3 )
 build_mode = 0
-polygon = Vector2Array( 67.6428, 27.2697, 67.8365, -15.5405, 55.8264, -39.5607, -59.0444, -24.4512, -60.9819, 4.41177 )
+polygon = Vector2Array( 67.5027, 27.7352, 67.8365, -15.5405, 55.8264, -39.5607, -59.0444, -24.4512, -60.9819, 4.41177, -43.3327, 20.9146 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
@@ -58,7 +58,7 @@ trigger = false
 
 transform/scale = Vector2( 0.3, 0.3 )
 build_mode = 0
-polygon = Vector2Array( -41.223, 25.9137, 35.2927, 44.51, 67.6428, 27.2697, -60.9819, 4.41177 )
+polygon = Vector2Array( -42.7643, 24.8933, 39.0834, 45.071, 46.1882, 33.1349 )
 shape_range = Vector2( 1, 1 )
 trigger = false
 
