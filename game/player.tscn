@@ -41,6 +41,7 @@ damp_override/linear = -1.0
 damp_override/angular = 0.0
 script/script = ExtResource( 1 )
 flipped = false
+fuselage_colour = Color( 1, 1, 1, 1 )
 
 [node name="plane" parent="." instance=ExtResource( 2 )]
 
@@ -62,6 +63,15 @@ polygon = Vector2Array( -42.7643, 24.8933, 39.0834, 45.071, 46.1882, 33.1349 )
 shape_range = Vector2( 1, 1 )
 trigger = false
 
+[node name="invulnerability" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = true
+
 [connection signal="body_enter_shape" from="." to="." method="_on_player_body_enter_shape"]
+
+[connection signal="timeout" from="invulnerability" to="." method="_on_invulnerability_timeout"]
 
 

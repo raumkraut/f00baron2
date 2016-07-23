@@ -19,6 +19,7 @@ var min_turn_rate = 0.6
 var thrust = 160
 var stall_speed = 40
 var full_lift_speed = 200
+var fair_game = false
 # These determine the max impact we can endure
 var undercarriage_strength = 40
 var airframe_strength = 10
@@ -32,7 +33,8 @@ func _ready():
 	# so we need to flip when asked to
 	if flipped:
 		for node in get_children():
-			node.set_scale(node.get_scale() * Vector2(1, -1))
+			if node.has_method('set_scale'):
+				node.set_scale(node.get_scale() * Vector2(1, -1))
 	
 
 func set_colour(colour):
@@ -43,6 +45,8 @@ func set_colour(colour):
 
 func respawn():
 	""" Restore the player to its initial state """
+	fair_game = false
+	get_node("invulnerability").start()
 	throttle = 0
 	pitching = 0
 	firing = 0
@@ -72,6 +76,7 @@ func set_firing(dakka):
 	""" Dakkadakka! """
 	firing = bool(dakka)
 	
+## TODO: Shooooooooooot!
 
 func _integrate_forces(state):
 	if state.is_sleeping():
@@ -99,7 +104,11 @@ func _integrate_forces(state):
 	
 
 func _on_player_body_enter_shape( body_id, body, body_shape, local_shape ):
-	""" A player has hit something, or vice versa """
+	""" The player has hit something, or vice versa """
+	if not fair_game:
+		# Not sportsmanlike
+		return
+	
 	# Work out the impact velocity
 	var impact_v = get_linear_velocity()
 	if body.is_type('StaticBody2D'):
@@ -122,4 +131,6 @@ func _on_player_body_enter_shape( body_id, body, body_shape, local_shape ):
 		emit_signal('player_death', self, body)
 		
 	
-## TODO: Shooooooooooot!
+
+func _on_invulnerability_timeout():
+	fair_game = true
