@@ -96,7 +96,6 @@ func shooty_mcshootface():
 
 func _fixed_process(delta):
 	if armed and firing and not reloading:
-		print('pew')
 		reloading = true
 		shooty_mcshootface()
 		get_node('reloading').start()
