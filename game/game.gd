@@ -68,6 +68,7 @@ func _on_airspace_body_exit( body ):
 
 func _on_runway_body_exit( body ):
 	if body.is_in_group('players'):
+		body.armed = true
 		# Set the airborne player to collidable
 		body.set_layer_mask_bit(collision_layer_players, true)
 		

@@ -1,18 +1,18 @@
 
 extends RigidBody2D
 
-# Initial positioning
+# Initial params
 onready var spawn_pos = get_pos()
 onready var spawn_rot = get_rot()
 onready var undercarriage_shapes = range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
+onready var bullet = preload('res://plane/bullet.tscn')
 export var flipped = false
 # Personalisation
 export var fuselage_colour = Color('ffffff')
 # Flight controls
 var throttle = 0
 var pitching = 0
-var firing = false
-# Flight parameters
+# Aircraft parameters
 var perpendicular_damp = 8
 var turn_rate = 4
 var min_turn_rate = 0.6
@@ -20,6 +20,10 @@ var thrust = 160
 var stall_speed = 40
 var full_lift_speed = 200
 var fair_game = false
+var armed = false
+var firing = false
+var reloading = false
+var muzzle_velocity = Vector2(600, 0)
 # These determine the max impact we can endure
 var undercarriage_strength = 40
 var airframe_strength = 10
@@ -35,6 +39,7 @@ func _ready():
 		for node in get_children():
 			if node.has_method('set_scale'):
 				node.set_scale(node.get_scale() * Vector2(1, -1))
+	set_fixed_process(true)
 	
 
 func set_colour(colour):
@@ -46,10 +51,12 @@ func set_colour(colour):
 func respawn():
 	""" Restore the player to its initial state """
 	fair_game = false
+	armed = false
+	firing = false
+	reloading = false
 	get_node("invulnerability").start()
 	throttle = 0
 	pitching = 0
-	firing = 0
 	set_pos(spawn_pos)
 	set_rot(spawn_rot)
 	set_applied_force(Vector2())
@@ -76,8 +83,24 @@ func set_firing(dakka):
 	""" Dakkadakka! """
 	firing = bool(dakka)
 	
-## TODO: Shooooooooooot!
+func shooty_mcshootface():
+	""" SHOOOOOOOOT!" """
+	var barrel = get_node('barrel')
+	var pew = bullet.instance()
+	pew.add_to_group('bullets')
+	pew.set_pos(get_pos() + barrel.get_pos().rotated(get_rot()))
+	pew.set_linear_velocity(get_linear_velocity() + muzzle_velocity.rotated(get_rot()))
+	# Is there a better place to put bullets?
+	get_node('..').add_child(pew)
+	
 
+func _fixed_process(delta):
+	if armed and firing and not reloading:
+		print('pew')
+		reloading = true
+		shooty_mcshootface()
+		get_node('reloading').start()
+	
 func _integrate_forces(state):
 	if state.is_sleeping():
 		return
@@ -134,3 +157,6 @@ func _on_player_body_enter_shape( body_id, body, body_shape, local_shape ):
 
 func _on_invulnerability_timeout():
 	fair_game = true
+
+func _on_reloading_timeout():
+	reloading = false
