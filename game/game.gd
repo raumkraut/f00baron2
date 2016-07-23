@@ -53,10 +53,11 @@ func _process(delta):
 
 func _on_airspace_body_exit( body ):
 	# Something physics-al has left the arena
-	if body.is_in_group('bullets'):
+	if not body.is_in_group('players'):
 		body.queue_free()
 		return
-		
+	
+	# Whatever remains, however improbable, must be a player
 	var arena = get_node("airspace/collider")
 	var half_width = arena.get_shape().get_extents().x
 	var left = arena.get_pos().x - half_width
