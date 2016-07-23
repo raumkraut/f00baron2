@@ -76,6 +76,7 @@ func _on_runway_body_exit( body ):
 		body.armed = true
 		# Set the airborne player to collidable
 		body.set_layer_mask_bit(collision_layer_players, true)
+		body.set_collision_mask_bit(collision_layer_players, true)
 		
 
 
@@ -91,4 +92,5 @@ func _on_player_death( player, killer ):
 	## TODO: SCORE!
 	# Fetch me a fresh plane!
 	player.set_layer_mask_bit(collision_layer_players, false)
+	player.set_collision_mask_bit(collision_layer_players, false)
 	player.respawn()
