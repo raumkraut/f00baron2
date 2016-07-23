@@ -84,10 +84,10 @@ func _on_player_death( player, killer ):
 	""" A player is kill """
 	# Show an explosion
 	var boom = explosion.instance()
+	boom.flipped = player.flipped
 	boom.set_colour(player.fuselage_colour)
 	boom.set_pos(player.get_pos())
 	boom.set_velocity(player.get_linear_velocity())
-	boom.flipped = player.flipped
 	get_node('clouds').add_child(boom)
 	## TODO: SCORE!
 	# Fetch me a fresh plane!

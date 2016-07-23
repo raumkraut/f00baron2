@@ -3,17 +3,21 @@ extends Node2D
 
 export var flipped = false
 
+var extra_velocity = Vector2(0, 0)
+
 func _ready():
-	# Flip the debris when appropriate
-	if flipped:
-		for node in get_node('debris').get_children():
+	# Customise the debris, depending on the situation
+	for node in get_node('debris').get_children():
+		if flipped:
+			# Flip the position and velocity when appropriate
+			node.set_pos(node.get_pos() * Vector2(-1, 1))
 			node.set_linear_velocity(node.get_linear_velocity() * Vector2(-1, 1))
+		# Add the original object's "terminal" velocity
+		node.set_linear_velocity(node.get_linear_velocity() + extra_velocity)
 
 func set_velocity(velocity):
 	""" Apply the given velocity vector to the debris """
-	# By "apply" we mean "add"
-	for node in get_node("debris").get_children():
-		node.set_linear_velocity(node.get_linear_velocity() + velocity)
+	extra_velocity = velocity
 
 func set_colour(colour):
 	""" Set the colour of the debris """
