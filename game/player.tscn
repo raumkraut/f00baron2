@@ -41,6 +41,7 @@ damp_override/linear = -1.0
 damp_override/angular = 0.0
 script/script = ExtResource( 1 )
 flipped = false
+player_id = null
 fuselage_colour = Color( 1, 1, 1, 1 )
 
 [node name="plane" parent="." instance=ExtResource( 2 )]

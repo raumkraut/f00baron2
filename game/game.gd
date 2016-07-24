@@ -15,12 +15,29 @@ func _init():
 	randomize()
 
 func _ready():
-	set_process(true)
 	debug_display = get_node('hud/debug')
+	set_score(1, 0)
+	set_score(2, 0)
+	set_process(true)
 
 func debug(string):
 	debug_display.set_text(str(string))
 	
+func set_score(player_id, score):
+	""" Set the score for the given player ID """
+	var label = get_node('hud/p' + str(player_id) + ' score')
+	if not label:
+		return
+	label.set_text(str(score))
+	
+func update_score(player_id, diff):
+	""" Modify the given player's score """
+	var label = get_node('hud/p' + str(player_id) + ' score')
+	if not label:
+		return
+	label.set_text(str(int(label.get_text()) + diff))
+	
+
 func _process(delta):
 	# Tell the planes what to do
 	var player1 = get_node("airspace/player1")
@@ -89,7 +106,19 @@ func _on_player_death( player, killer ):
 	boom.set_pos(player.get_pos())
 	boom.set_velocity(player.get_linear_velocity())
 	get_node('clouds').add_child(boom)
-	## TODO: SCORE!
+	
+	# work out who to give or take points from
+	var killer_id = 0
+	if killer.is_in_group('players'):
+		killer_id = killer.player_id
+	elif killer.is_in_group('bullets'):
+		killer_id = killer.firer.player_id
+	if not killer_id or killer_id == player.player_id:
+		# Someone made an oopsie
+		update_score(player.player_id, -1)
+	else:
+		update_score(killer_id, 1)
+	
 	# Fetch me a fresh plane!
 	player.set_layer_mask_bit(collision_layer_players, false)
 	player.set_collision_mask_bit(collision_layer_players, false)

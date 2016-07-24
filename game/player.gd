@@ -8,6 +8,7 @@ onready var undercarriage_shapes = range(get_node('undercarriage').get_collision
 onready var bullet = preload('res://plane/bullet.tscn')
 export var flipped = false
 # Personalisation
+export (int) var player_id
 export var fuselage_colour = Color('ffffff')
 # Flight controls
 var throttle = 0
@@ -23,7 +24,7 @@ var fair_game = false
 var armed = false
 var firing = false
 var reloading = false
-var muzzle_velocity = Vector2(600, 0)
+var muzzle_velocity = Vector2(500, 0)
 # These determine the max impact we can endure
 var undercarriage_strength = 40
 var airframe_strength = 10
@@ -87,6 +88,7 @@ func shooty_mcshootface():
 	""" SHOOOOOOOOT!" """
 	var barrel = get_node('barrel')
 	var pew = bullet.instance()
+	pew.firer = self
 	pew.add_to_group('bullets')
 	pew.set_pos(get_pos() + barrel.get_pos().rotated(get_rot()))
 	pew.set_linear_velocity(get_linear_velocity() + muzzle_velocity.rotated(get_rot()))
