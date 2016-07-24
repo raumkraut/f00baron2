@@ -19,6 +19,7 @@ func _ready():
 	set_score(1, 0)
 	set_score(2, 0)
 	set_process(true)
+	get_tree().set_pause(true)
 
 func debug(string):
 	debug_display.set_text(str(string))
@@ -123,3 +124,25 @@ func _on_player_death( player, killer ):
 	player.set_layer_mask_bit(collision_layer_players, false)
 	player.set_collision_mask_bit(collision_layer_players, false)
 	player.respawn()
+
+
+func _on_menu_new_game():
+	# Move the players back down
+	get_node("airspace/player1").respawn()
+	get_node("airspace/player2").respawn()
+	# Reset the scores
+	get_node('hud/p1 score').set_text('0')
+	get_node('hud/p2 score').set_text('0')
+	# GOGOGO
+	get_node('hud/score fadein').play()
+	_on_menu_unpause()
+	
+func _on_menu_unpause():
+	get_node("menu/main/continue").show()
+	get_node("menu").hide()
+	get_tree().set_pause(false)
+	
+func _on_menu_quit():
+	get_tree().quit()
+	
+
