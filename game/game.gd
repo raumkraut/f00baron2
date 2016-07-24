@@ -18,8 +18,14 @@ func _ready():
 	debug_display = get_node('hud/debug')
 	set_score(1, 0)
 	set_score(2, 0)
-	set_process(true)
+	set_process_input(true)
+	pause_game()
+	
+
+func pause_game():
 	get_tree().set_pause(true)
+	get_node('menu').show()
+	
 
 func debug(string):
 	debug_display.set_text(str(string))
@@ -39,34 +45,39 @@ func update_score(player_id, diff):
 	label.set_text(str(int(label.get_text()) + diff))
 	
 
-func _process(delta):
+func _input(event):
+	if event.is_action('pause'):
+		pause_game()
+	
+	if get_tree().is_paused():
+		# No more input handling here
+		return
+	
 	# Tell the planes what to do
 	var player1 = get_node("airspace/player1")
-	if Input.is_action_pressed("p1_throttle_up"):
+	if event.is_action("p1_throttle_up"):
 		player1.set_throttle(1)
-	elif Input.is_action_pressed("p1_throttle_down"):
+	elif event.is_action("p1_throttle_down"):
 		player1.set_throttle(0)
-	if Input.is_action_pressed("p1_clockwise"):
-		player1.set_pitching(1)
-	elif Input.is_action_pressed("p1_anticlockwise"):
-		player1.set_pitching(-1)
-	else:
-		player1.set_pitching(0)
-	player1.set_firing(Input.is_action_pressed("p1_fire"))
+	elif event.is_action("p1_clockwise"):
+		player1.set_pitching(event.is_pressed())
+	elif event.is_action("p1_anticlockwise"):
+		player1.set_pitching(-event.is_pressed())
+	elif event.is_action("p1_fire"):
+		player1.set_firing(event.is_pressed())
 	
 	# Player 2
 	var player2 = get_node("airspace/player2")
-	if Input.is_action_pressed("p2_throttle_up"):
+	if event.is_action("p2_throttle_up"):
 		player2.set_throttle(1)
-	elif Input.is_action_pressed("p2_throttle_down"):
+	elif event.is_action("p2_throttle_down"):
 		player2.set_throttle(0)
-	if Input.is_action_pressed("p2_clockwise"):
-		player2.set_pitching(1)
-	elif Input.is_action_pressed("p2_anticlockwise"):
-		player2.set_pitching(-1)
-	else:
-		player2.set_pitching(0)
-	player2.set_firing(Input.is_action_pressed("p2_fire"))
+	elif event.is_action("p2_clockwise"):
+		player2.set_pitching(event.is_pressed())
+	elif event.is_action("p2_anticlockwise"):
+		player2.set_pitching(-event.is_pressed())
+	elif event.is_action("p2_fire"):
+		player2.set_firing(event.is_pressed())
 	
 
 func _on_airspace_body_exit( body ):
@@ -131,8 +142,8 @@ func _on_menu_new_game():
 	get_node("airspace/player1").respawn()
 	get_node("airspace/player2").respawn()
 	# Reset the scores
-	get_node('hud/p1 score').set_text('0')
-	get_node('hud/p2 score').set_text('0')
+	set_score(1, 0)
+	set_score(2, 0)
 	# GOGOGO
 	get_node('hud/score fadein').play()
 	_on_menu_unpause()
@@ -145,4 +156,3 @@ func _on_menu_unpause():
 func _on_menu_quit():
 	get_tree().quit()
 	
-
