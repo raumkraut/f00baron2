@@ -13,6 +13,7 @@ export var fuselage_colour = Color('ffffff')
 # Flight controls
 var throttle = 0
 var pitching = 0
+var respawning = false
 # Aircraft parameters
 var perpendicular_damp = 8
 var turn_rate = 4
@@ -51,6 +52,18 @@ func set_colour(colour):
 
 func respawn():
 	""" Restore the player to its initial state """
+	# For a Physics node, some things (such as position/rotation)
+	# cannot be changed between physics frames.
+	# So we set a flag here, and action it in the _fixed_process
+	respawning = true
+	
+func do_respawn():
+	"""
+		Actually do the do to reset the player
+		
+		NB. This will only partially work if not done in sync
+		with the physics server (eg. via _fixed_process).
+	"""
 	fair_game = false
 	armed = false
 	firing = false
@@ -63,6 +76,7 @@ func respawn():
 	set_applied_force(Vector2())
 	set_linear_velocity(Vector2())
 	set_angular_velocity(0)
+	
 
 func set_throttle(brum):
 	""" Full speed ahead! Or... not. """
@@ -97,6 +111,10 @@ func shooty_mcshootface():
 	
 
 func _fixed_process(delta):
+	if respawning:
+		do_respawn()
+		respawning = false
+	
 	if armed and firing and not reloading:
 		reloading = true
 		shooty_mcshootface()
