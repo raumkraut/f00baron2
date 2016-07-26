@@ -6,6 +6,13 @@ signal new_game
 signal quit
 
 
+func _on_menu_visibility_changed():
+	if is_visible():
+		for node in get_node("main").get_children():
+			if node.is_visible():
+				node.grab_focus()
+				break
+
 func _on_continue_pressed():
 	emit_signal('unpause')
 
