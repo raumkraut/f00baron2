@@ -78,6 +78,17 @@ func _input(event):
 		player2.set_pitching(-event.is_pressed())
 	elif event.is_action("p2_fire"):
 		player2.set_firing(event.is_pressed())
+	# Emergency backup stop-firing for P2
+	## See: https://github.com/godotengine/godot/issues/5901
+	if event.type == InputEvent.KEY:
+		# Check all the key inputs for p2_fire, to see if they match
+		for input in InputMap.get_action_list('p2_fire'):
+			if input.type != InputEvent.KEY:
+				continue
+			if event.scancode != input.scancode:
+				continue
+			player2.set_firing(event.is_pressed())
+			break
 	
 
 func _on_airspace_body_exit( body ):
