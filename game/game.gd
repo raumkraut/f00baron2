@@ -47,7 +47,7 @@ func update_score(player_id, diff):
 
 func _input(event):
 	if event.is_action('pause'):
-		pause_game()
+		return pause_game()
 	
 	if get_tree().is_paused():
 		# No more input handling here
@@ -56,28 +56,28 @@ func _input(event):
 	# Tell the planes what to do
 	var player1 = get_node("airspace/player1")
 	if event.is_action("p1_throttle_up"):
-		player1.set_throttle(1)
+		return player1.set_throttle(1)
 	elif event.is_action("p1_throttle_down"):
-		player1.set_throttle(0)
+		return player1.set_throttle(0)
 	elif event.is_action("p1_clockwise"):
-		player1.set_pitching(event.is_pressed())
+		return player1.set_pitching(event.is_pressed())
 	elif event.is_action("p1_anticlockwise"):
-		player1.set_pitching(-event.is_pressed())
+		return player1.set_pitching(-event.is_pressed())
 	elif event.is_action("p1_fire"):
-		player1.set_firing(event.is_pressed())
+		return player1.set_firing(event.is_pressed())
 	
 	# Player 2
 	var player2 = get_node("airspace/player2")
 	if event.is_action("p2_throttle_up"):
-		player2.set_throttle(1)
+		return player2.set_throttle(1)
 	elif event.is_action("p2_throttle_down"):
-		player2.set_throttle(0)
+		return player2.set_throttle(0)
 	elif event.is_action("p2_clockwise"):
-		player2.set_pitching(event.is_pressed())
+		return player2.set_pitching(event.is_pressed())
 	elif event.is_action("p2_anticlockwise"):
-		player2.set_pitching(-event.is_pressed())
+		return player2.set_pitching(-event.is_pressed())
 	elif event.is_action("p2_fire"):
-		player2.set_firing(event.is_pressed())
+		return player2.set_firing(event.is_pressed())
 	# Emergency backup stop-firing for P2
 	## See: https://github.com/godotengine/godot/issues/5901
 	if event.type == InputEvent.KEY:
@@ -87,8 +87,7 @@ func _input(event):
 				continue
 			if event.scancode != input.scancode:
 				continue
-			player2.set_firing(event.is_pressed())
-			break
+			return player2.set_firing(event.is_pressed())
 	
 
 func _on_airspace_body_exit( body ):
