@@ -1,5 +1,5 @@
 
-extends Node2D
+extends Control
 
 var debug_display
 onready var explosion = preload('res://explosion/explosion.tscn')

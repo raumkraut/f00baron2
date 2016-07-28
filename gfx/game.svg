@@ -20,6 +20,30 @@
   <defs
      id="defs4036">
     <linearGradient
+       id="bw-menu-text-2"
+       inkscape:collect="always">
+      <stop
+         id="stop4329"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop4331"
+         offset="1"
+         style="stop-color:#444444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="menu-text-0"
+       inkscape:collect="always">
+      <stop
+         id="stop4260"
+         offset="0"
+         style="stop-color:#ff0000;stop-opacity:1" />
+      <stop
+         id="stop4262"
+         offset="1"
+         style="stop-color:#420000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
        inkscape:collect="always"
        id="linearGradient4155">
       <stop
@@ -254,6 +278,94 @@
        x2="60.104198"
        y2="1.8716795"
        gradientTransform="matrix(0.40070635,0,0,3.2056507,445.91586,271.00006)" />
+    <linearGradient
+       gradientTransform="translate(1.0000001,44.000007)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4256-0"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient4278"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient6916"
+       gradientUnits="userSpaceOnUse"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015" />
+    <linearGradient
+       gradientTransform="translate(2,85.500004)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4256-0-0"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-0.49999989,44.000007)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient6936"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(2,127)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4256-0-02"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-0.49999989,44.000007)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient6981"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(1.999999,166)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4256-0-02-7"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-2,127)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient4271"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -262,17 +374,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.64"
-     inkscape:cx="448.31037"
-     inkscape:cy="335.63102"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="592.47794"
+     inkscape:cy="383.5652"
      inkscape:document-units="px"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer9"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="0"
-     inkscape:window-y="60"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1362"
+     inkscape:window-height="830"
+     inkscape:window-x="2254"
+     inkscape:window-y="194"
+     inkscape:window-maximized="0"
      units="px"
      guidetolerance="20"
      inkscape:snap-tangential="false"
@@ -286,7 +398,8 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="false"
      inkscape:snap-bbox-midpoints="false"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-text-baseline="false">
     <inkscape:grid
        type="xygrid"
        id="grid4042"
@@ -702,7 +815,17 @@
        inkscape:export-filename="/home/mel/src/godot/f00baron2/game/explosion/metal.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4312"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:16px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+         id="flowRegion4314"><rect
+           id="rect4316"
+           width="280"
+           height="104"
+           x="544"
+           y="16.000019" /></flowRegion><flowPara
+         id="flowPara4318" /></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
@@ -792,5 +915,154 @@
        inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/explosion/debris_wheel.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="menus">
+    <text
+       xml:space="preserve"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="552"
+       y="64.000015"
+       id="text4228"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4234"
+         style="fill-opacity:1;fill:none;-inkscape-font-specification:'Bangers, Normal';font-family:Bangers;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:45px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:miter;letter-spacing:1.5px">#F00 Baron 2 </tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text7008"
+       y="108.00002"
+       x="553"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/continue.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         id="tspan7010"
+         sodipodi:role="line"
+         x="553"
+         y="108.00002">Continue</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient4256-0);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="553"
+       y="108.00002"
+       id="text4228-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/continue.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4306"
+         style="fill:url(#linearGradient4256-0);fill-opacity:1.0"
+         x="553"
+         y="108.00002">Continue</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6912"
+       y="64.000015"
+       x="552"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient6916);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient6916);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan6914"
+         sodipodi:role="line"
+         x="552"
+         y="64.000015">#F00 Baron 2 </tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text7012"
+       y="149.50003"
+       x="554"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/new_game.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         id="tspan7014"
+         sodipodi:role="line"
+         x="554"
+         y="149.50003">New game</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient4256-0-0);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="554"
+       y="149.50003"
+       id="text4228-9-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/new_game.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan6964"
+         style="fill:url(#linearGradient4256-0-0);fill-opacity:1.0"
+         x="554"
+         y="149.50003">New game</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text7016"
+       y="191.00002"
+       x="554"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/help.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4307"
+         x="554"
+         y="191.00002">Help</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient4256-0-02);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="554"
+       y="191.00002"
+       id="text4228-9-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/help.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4305"
+         style="fill:url(#linearGradient4256-0-02);fill-opacity:1.0"
+         x="554"
+         y="191.00002">Help</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text7016-1"
+       y="230.00002"
+       x="554"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/exit.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         y="230.00002"
+         x="554"
+         id="tspan7018-5"
+         sodipodi:role="line">Exit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient4256-0-02-7);fill-opacity:1.0;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="554"
+       y="230.00002"
+       id="text4228-9-8-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/exit.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="fill:url(#linearGradient4256-0-02-7);fill-opacity:1.0"
+         y="230.00002"
+         x="554"
+         sodipodi:role="line"
+         id="tspan6985-7">Exit</tspan></text>
   </g>
 </svg>
