@@ -181,6 +181,7 @@ _update_shape_index = 0
 
 [node name="player1" parent="airspace" groups=[ "players" ] instance=ExtResource( 4 )]
 
+visibility/visible = false
 transform/pos = Vector2( 38.96, 556.597 )
 transform/rot = 15.0
 collision/layers = 0
@@ -190,6 +191,7 @@ fuselage_colour = Color( 1, 0, 0, 1 )
 
 [node name="player2" parent="airspace" groups=[ "players" ] instance=ExtResource( 4 )]
 
+visibility/visible = false
 transform/pos = Vector2( 756.12, 558.057 )
 transform/rot = 165.0
 collision/layers = 0

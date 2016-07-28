@@ -76,6 +76,7 @@ func do_respawn():
 	set_applied_force(Vector2())
 	set_linear_velocity(Vector2())
 	set_angular_velocity(0)
+	set_hidden(false)
 	
 
 func set_throttle(brum):
