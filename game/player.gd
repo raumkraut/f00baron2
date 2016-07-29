@@ -171,6 +171,7 @@ func _on_player_body_enter_shape( body_id, body, body_shape, local_shape ):
 		strength = airframe_strength
 	
 	if impact_v.length_squared() > pow(strength, 2):
+		fair_game = false
 		emit_signal('player_death', self, body)
 		
 	
