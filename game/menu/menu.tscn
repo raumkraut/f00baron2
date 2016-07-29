@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://menu/menu.gd" type="Script" id=1]
 [ext_resource path="res://menu/title.png" type="Texture" id=2]
 [ext_resource path="res://menu/continue.png" type="Texture" id=3]
 [ext_resource path="res://menu/new_game.png" type="Texture" id=4]
-[ext_resource path="res://menu/exit.png" type="Texture" id=5]
+[ext_resource path="res://menu/help.png" type="Texture" id=5]
+[ext_resource path="res://menu/exit.png" type="Texture" id=6]
+[ext_resource path="res://menu/controls.png" type="Texture" id=7]
 
 [node name="menu" type="Control"]
 
@@ -31,6 +33,7 @@ modulate = Color( 1, 0, 0, 1 )
 
 [node name="main" type="VBoxContainer" parent="."]
 
+visibility/visible = false
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -66,11 +69,26 @@ focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
 margin/left = 231.0
-margin/top = 92.0
+margin/top = 51.0
 margin/right = 567.7
-margin/bottom = 174.6
+margin/bottom = 133.6
 toggle_mode = false
 textures/normal = ExtResource( 4 )
+params/scale = Vector2( 0.7, 0.7 )
+params/modulate = Color( 1, 0, 0, 1 )
+
+[node name="help" type="TextureButton" parent="main"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 322.0
+margin/top = 137.0
+margin/right = 477.4
+margin/bottom = 216.1
+toggle_mode = false
+textures/normal = ExtResource( 5 )
 params/scale = Vector2( 0.7, 0.7 )
 params/modulate = Color( 1, 0, 0, 1 )
 
@@ -81,13 +99,91 @@ focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
 margin/left = 327.0
-margin/top = 178.0
+margin/top = 220.0
 margin/right = 471.9
-margin/bottom = 257.8
+margin/bottom = 299.8
 toggle_mode = false
-textures/normal = ExtResource( 5 )
+textures/normal = ExtResource( 6 )
 params/scale = Vector2( 0.7, 0.7 )
 params/modulate = Color( 1, 0, 0, 1 )
+
+[node name="help" type="MarginContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 160.0
+margin/right = 800.0
+margin/bottom = 510.0
+
+[node name="controls" type="HBoxContainer" parent="help"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 800.0
+margin/bottom = 350.0
+alignment = 0
+
+[node name="p1" type="MarginContainer" parent="help/controls"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 400.0
+margin/bottom = 350.0
+
+[node name="lettering" type="Node2D" parent="help/controls/p1"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+
+[node name="w" type="Sprite" parent="help/controls/p1/lettering"]
+
+transform/pos = Vector2( 481.768, 95.2061 )
+texture = ExtResource( 7 )
+modulate = Color( 1, 0, 0, 1 )
+region = true
+region_rect = Rect2( 0, 0, 105, 114 )
+
+[node name="a" type="Sprite" parent="help/controls/p1/lettering"]
+
+transform/pos = Vector2( 202.483, 450.636 )
+texture = ExtResource( 7 )
+modulate = Color( 1, 0, 0, 1 )
+region = true
+region_rect = Rect2( 181, 0, 78, 114 )
+
+[node name="s" type="Sprite" parent="help/controls/p1/lettering"]
+
+transform/pos = Vector2( 478.198, 457.375 )
+texture = ExtResource( 7 )
+modulate = Color( 1, 0, 0, 1 )
+region = true
+region_rect = Rect2( 105, 0, 76, 114 )
+
+[node name="d" type="Sprite" parent="help/controls/p1/lettering"]
+
+transform/pos = Vector2( 757.428, 467.569 )
+texture = ExtResource( 7 )
+modulate = Color( 1, 0, 0, 1 )
+region = true
+region_rect = Rect2( 266, 0, 82, 114 )
+
+[node name="space" type="Sprite" parent="help/controls/p1/lettering"]
+
+transform/pos = Vector2( 502.673, 811.949 )
+texture = ExtResource( 7 )
+modulate = Color( 1, 0, 0, 1 )
+region = true
+region_rect = Rect2( 350, 0, 290, 114 )
 
 [connection signal="visibility_changed" from="." to="." method="_on_menu_visibility_changed"]
 

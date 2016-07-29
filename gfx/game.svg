@@ -366,6 +366,26 @@
        x2="664"
        y2="64.000015"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-483.64379,-3.9274569)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4256-0-02-7-6"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(1.999999,166)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4280"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -374,9 +394,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="592.47794"
-     inkscape:cy="383.5652"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="298.87166"
+     inkscape:cy="540.37441"
      inkscape:document-units="px"
      inkscape:current-layer="layer9"
      showgrid="true"
@@ -1064,5 +1084,34 @@
          x="554"
          sodipodi:role="line"
          id="tspan6985-7">Exit</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text7016-1-6"
+       y="60.072552"
+       x="68.356194"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/exit.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4342"
+         x="68.356194"
+         y="60.072552">W S A D SPACE ↑←↓→ CTRL KP0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient4256-0-02-7-6);fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="68.356194"
+       y="60.072552"
+       id="text4228-9-8-9-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/exit.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4340"
+         style="fill:url(#linearGradient4256-0-02-7-6)"
+         x="68.356194"
+         y="60.072552">W S A D SPACE ↑←↓→ CTRL KP0</tspan></text>
   </g>
 </svg>
