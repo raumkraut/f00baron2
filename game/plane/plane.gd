@@ -25,6 +25,8 @@ func set_colour(colour):
 	fuselage_colour = colour
 	var fuselage = get_node('fuselage')
 	var wings = get_node('wings')
-	fuselage.set_modulate(colour)
-	wings.set_modulate(colour)
+	if fuselage:
+		fuselage.set_modulate(colour)
+	if wings:
+		wings.set_modulate(colour)
 	
