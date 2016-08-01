@@ -1,12 +1,14 @@
-
+tool
 extends Node2D
 
 # The opacity of the propellor when it's not fully visible
 var prop_opacity = 0.7
 
+export var fuselage_colour = Color('ffffff') setget set_colour
+
 
 func _ready():
-	pass
+	set_colour(fuselage_colour)
 
 
 func _on_rotator_timeout():
@@ -20,6 +22,7 @@ func _on_rotator_timeout():
 
 func set_colour(colour):
 	""" Set the colour of the fuselage and wings """
+	fuselage_colour = colour
 	var fuselage = get_node('fuselage')
 	var wings = get_node('wings')
 	fuselage.set_modulate(colour)

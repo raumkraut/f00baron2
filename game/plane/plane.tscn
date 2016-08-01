@@ -11,6 +11,7 @@
 [node name="plane" type="Node2D"]
 
 script/script = ExtResource( 1 )
+fuselage_colour = Color( 1, 1, 1, 1 )
 
 [node name="wheels" type="Sprite" parent="."]
 
