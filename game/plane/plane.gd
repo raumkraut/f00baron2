@@ -23,10 +23,11 @@ func _on_rotator_timeout():
 func set_colour(colour):
 	""" Set the colour of the fuselage and wings """
 	fuselage_colour = colour
+	if not is_inside_tree():
+		return
+	
 	var fuselage = get_node('fuselage')
 	var wings = get_node('wings')
-	if fuselage:
-		fuselage.set_modulate(colour)
-	if wings:
-		wings.set_modulate(colour)
+	fuselage.set_modulate(colour)
+	wings.set_modulate(colour)
 	
