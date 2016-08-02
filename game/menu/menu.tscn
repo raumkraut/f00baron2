@@ -1,10 +1,69 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=17 format=1]
 
 [ext_resource path="res://menu/menu.gd" type="Script" id=1]
 [ext_resource path="res://menu/title.png" type="Texture" id=2]
 [ext_resource path="res://menu/continue.png" type="Texture" id=3]
 [ext_resource path="res://menu/new_game.png" type="Texture" id=4]
-[ext_resource path="res://menu/exit.png" type="Texture" id=5]
+[ext_resource path="res://menu/help.png" type="Texture" id=5]
+[ext_resource path="res://menu/exit.png" type="Texture" id=6]
+[ext_resource path="res://menu/ok.png" type="Texture" id=7]
+[ext_resource path="res://menu/controls.png" type="Texture" id=8]
+[ext_resource path="res://explosion/debris_prop.png" type="Texture" id=9]
+[ext_resource path="res://plane/plane.tscn" type="PackedScene" id=10]
+[ext_resource path="res://plane/bullet.tscn" type="PackedScene" id=11]
+
+[sub_resource type="Animation" id=6]
+
+resource/name = "prop speedy"
+length = 0.4
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -360.0 ] }
+
+[sub_resource type="Animation" id=7]
+
+length = 1.4
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -360.0 ] }
+
+[sub_resource type="Animation" id=3]
+
+length = 1.4
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.4 ), "transitions":FloatArray( 1, 1 ), "values":[ -1.00179e-05, 360.0 ] }
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "prop slow"
+length = 6.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/rot")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 6 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -360.0 ] }
+
+[sub_resource type="Animation" id=5]
+
+resource/name = "bullet fire"
+length = 0.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/pos")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 80, -11 ), Vector2( 280, -11 ) ] }
 
 [node name="menu" type="Control"]
 
@@ -66,11 +125,26 @@ focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
 margin/left = 231.0
-margin/top = 92.0
+margin/top = 51.0
 margin/right = 567.7
-margin/bottom = 174.6
+margin/bottom = 133.6
 toggle_mode = false
 textures/normal = ExtResource( 4 )
+params/scale = Vector2( 0.7, 0.7 )
+params/modulate = Color( 1, 0, 0, 1 )
+
+[node name="help" type="TextureButton" parent="main"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 322.0
+margin/top = 137.0
+margin/right = 477.4
+margin/bottom = 216.1
+toggle_mode = false
+textures/normal = ExtResource( 5 )
 params/scale = Vector2( 0.7, 0.7 )
 params/modulate = Color( 1, 0, 0, 1 )
 
@@ -81,13 +155,373 @@ focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
 margin/left = 327.0
-margin/top = 178.0
+margin/top = 220.0
 margin/right = 471.9
-margin/bottom = 257.8
+margin/bottom = 299.8
 toggle_mode = false
-textures/normal = ExtResource( 5 )
+textures/normal = ExtResource( 6 )
 params/scale = Vector2( 0.7, 0.7 )
 params/modulate = Color( 1, 0, 0, 1 )
+
+[node name="help" type="Container" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 160.0
+margin/right = 800.0
+margin/bottom = 554.0
+
+[node name="ok" type="TextureButton" parent="help"]
+
+anchor/left = 3
+anchor/top = 1
+anchor/right = 3
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 55.0
+margin/top = 110.0
+margin/right = 55.0
+margin/bottom = 30.0
+toggle_mode = false
+textures/normal = ExtResource( 7 )
+params/scale = Vector2( 0.7, 0.7 )
+params/modulate = Color( 1, 0, 0, 1 )
+
+[node name="controls" type="HBoxContainer" parent="help"]
+
+rect/min_size = Vector2( 800, 350 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 804.0
+margin/bottom = 350.0
+alignment = 0
+
+[node name="p1" type="MarginContainer" parent="help/controls"]
+
+rect/min_size = Vector2( 400, 350 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 400.0
+margin/bottom = 350.0
+
+[node name="scaler" type="Node2D" parent="help/controls/p1"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+
+[node name="throttle" type="Sprite" parent="help/controls/p1/scaler"]
+
+transform/pos = Vector2( 487.033, 200.595 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 0, 0, 105, 118 )
+
+[node name="prop" type="Sprite" parent="help/controls/p1/scaler/throttle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/rot = -68.1249
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/throttle/prop"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop speedy" = SubResource( 6 )
+"next/prop speedy" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop speedy"
+
+[node name="anticlockwise" type="Sprite" parent="help/controls/p1/scaler"]
+
+transform/pos = Vector2( 212.724, 476.05 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 181, 0, 78, 118 )
+
+[node name="anticlockwiser" type="Position2D" parent="help/controls/p1/scaler/anticlockwise"]
+
+transform/rot = 1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/anticlockwise/anticlockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/clockwise spin" = SubResource( 7 )
+"anims/plane anticlockwise" = SubResource( 3 )
+"next/clockwise spin" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane anticlockwise"
+
+[node name="plane" parent="help/controls/p1/scaler/anticlockwise/anticlockwiser" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 0, 140 )
+transform/scale = Vector2( 0.8, 0.8 )
+fuselage_colour = Color( 1, 0, 0, 1 )
+
+[node name="idle" type="Sprite" parent="help/controls/p1/scaler"]
+
+transform/pos = Vector2( 483.463, 477.813 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 105, 0, 76, 118 )
+
+[node name="prop1" type="Sprite" parent="help/controls/p1/scaler/idle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/idle/prop1"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop slow" = SubResource( 4 )
+"next/prop slow" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop slow"
+
+[node name="clockwise" type="Sprite" parent="help/controls/p1/scaler"]
+
+transform/pos = Vector2( 759.376, 479.714 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 266, 0, 82, 118 )
+
+[node name="clockwiser" type="Position2D" parent="help/controls/p1/scaler/clockwise"]
+
+transform/rot = -1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/clockwise/clockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/plane clockwise" = SubResource( 7 )
+"next/plane clockwise" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane clockwise"
+
+[node name="plane" parent="help/controls/p1/scaler/clockwise/clockwiser" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 0, -140 )
+transform/scale = Vector2( 0.8, 0.8 )
+fuselage_colour = Color( 1, 0, 0, 1 )
+
+[node name="fire" type="Sprite" parent="help/controls/p1/scaler"]
+
+transform/pos = Vector2( 498.978, 771.076 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 350, 0, 290, 118 )
+
+[node name="plane1" parent="help/controls/p1/scaler/fire" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -80, -120 )
+transform/rot = -1.00179e-05
+transform/scale = Vector2( 0.8, 0.8 )
+fuselage_colour = Color( 1, 0, 0, 1 )
+
+[node name="bullet" parent="help/controls/p1/scaler/fire/plane1" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 80, -11 )
+transform/rot = 1.00179e-05
+transform/scale = Vector2( 1.25, 1.25 )
+velocity/linear = Vector2( 100, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="help/controls/p1/scaler/fire/plane1/bullet"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/bullet fire" = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "bullet fire"
+
+[node name="p2" type="MarginContainer" parent="help/controls"]
+
+rect/min_size = Vector2( 400, 350 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 404.0
+margin/top = 0.0
+margin/right = 804.0
+margin/bottom = 350.0
+
+[node name="scaler" type="Node2D" parent="help/controls/p2"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+
+[node name="throttle" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 487.033, 200.595 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 655, 0, 80, 118 )
+
+[node name="prop" type="Sprite" parent="help/controls/p2/scaler/throttle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/rot = -68.1249
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/throttle/prop"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop speedy" = SubResource( 6 )
+"next/prop speedy" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop speedy"
+
+[node name="anticlockwise" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 212.724, 476.05 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 735, 15, 120, 100 )
+
+[node name="anticlockwiser" type="Position2D" parent="help/controls/p2/scaler/anticlockwise"]
+
+transform/rot = 1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/anticlockwise/anticlockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/clockwise spin" = SubResource( 7 )
+"anims/plane anticlockwise" = SubResource( 3 )
+"next/clockwise spin" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane anticlockwise"
+
+[node name="plane" parent="help/controls/p2/scaler/anticlockwise/anticlockwiser" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 0, 140 )
+transform/scale = Vector2( 0.8, -0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="idle" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 483.463, 477.813 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 860, 0, 80, 118 )
+
+[node name="prop1" type="Sprite" parent="help/controls/p2/scaler/idle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/idle/prop1"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop slow" = SubResource( 4 )
+"next/prop slow" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop slow"
+
+[node name="clockwise" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 759.376, 479.714 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 940, 15, 120, 100 )
+
+[node name="clockwiser" type="Position2D" parent="help/controls/p2/scaler/clockwise"]
+
+transform/rot = -1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/clockwise/clockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/plane clockwise" = SubResource( 7 )
+"next/plane clockwise" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane clockwise"
+
+[node name="plane" parent="help/controls/p2/scaler/clockwise/clockwiser" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 0, -140 )
+transform/scale = Vector2( 0.8, -0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="fire" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 498.978, 771.076 )
+texture = ExtResource( 8 )
+region = true
+region_rect = Rect2( 1080, 0, 540, 118 )
+
+[node name="plane1" parent="help/controls/p2/scaler/fire" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 80, -120 )
+transform/rot = -1.00179e-05
+transform/scale = Vector2( -0.8, 0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="bullet" parent="help/controls/p2/scaler/fire/plane1" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 80, -11 )
+transform/rot = 1.00179e-05
+transform/scale = Vector2( 1.25, 1.25 )
+velocity/linear = Vector2( 100, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="help/controls/p2/scaler/fire/plane1/bullet"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/bullet fire" = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "bullet fire"
 
 [connection signal="visibility_changed" from="." to="." method="_on_menu_visibility_changed"]
 
@@ -95,6 +529,10 @@ params/modulate = Color( 1, 0, 0, 1 )
 
 [connection signal="pressed" from="main/new game" to="." method="_on_new_game_pressed"]
 
+[connection signal="pressed" from="main/help" to="." method="_on_help_pressed"]
+
 [connection signal="pressed" from="main/exit" to="." method="_on_exit_pressed"]
+
+[connection signal="pressed" from="help/ok" to="." method="_on_help_ok_pressed"]
 
 
