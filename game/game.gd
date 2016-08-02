@@ -155,7 +155,7 @@ func _on_menu_new_game():
 	set_score(1, 0)
 	set_score(2, 0)
 	# GOGOGO
-	get_node('hud/score fadein').play()
+	get_node('hud/fadein').play('score fadein')
 	_on_menu_unpause()
 	
 func _on_menu_unpause():
