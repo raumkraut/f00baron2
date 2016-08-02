@@ -11,7 +11,7 @@
 [ext_resource path="res://plane/plane.tscn" type="PackedScene" id=9]
 [ext_resource path="res://plane/bullet.tscn" type="PackedScene" id=10]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 
 resource/name = "prop speedy"
 length = 0.4
@@ -22,9 +22,8 @@ tracks/0/path = NodePath(".:transform/rot")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -360.0 ] }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=2]
 
-resource/name = "plane clockwise"
 length = 1.4
 loop = true
 step = 0.1
@@ -33,9 +32,8 @@ tracks/0/path = NodePath(".:transform/rot")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 1.4 ), "transitions":FloatArray( 1, 1 ), "values":[ 0.0, -360.0 ] }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource/name = "plane anticlockwise"
 length = 1.4
 loop = true
 step = 0.1
@@ -205,77 +203,76 @@ margin/bottom = 350.0
 
 transform/scale = Vector2( 0.4, 0.4 )
 
-[node name="w" type="Sprite" parent="help/controls/p1/scaler"]
+[node name="throttle" type="Sprite" parent="help/controls/p1/scaler"]
 
 transform/pos = Vector2( 489.069, 233.175 )
 texture = ExtResource( 7 )
 region = true
-region_rect = Rect2( 0, 0, 105, 114 )
+region_rect = Rect2( 0, 0, 105, 118 )
 
-[node name="prop" type="Sprite" parent="help/controls/p1/scaler/w"]
+[node name="prop" type="Sprite" parent="help/controls/p1/scaler/throttle"]
 
 transform/pos = Vector2( 0, -130 )
 transform/rot = -68.1249
 transform/scale = Vector2( 2, 2 )
 texture = ExtResource( 8 )
 
-[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/w/prop"]
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/throttle/prop"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-"anims/prop speedy" = SubResource( 3 )
+"anims/prop speedy" = SubResource( 1 )
 "next/prop speedy" = ""
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = "prop speedy"
 
-[node name="a" type="Sprite" parent="help/controls/p1/scaler"]
+[node name="anticlockwise" type="Sprite" parent="help/controls/p1/scaler"]
 
 transform/pos = Vector2( 214.76, 508.63 )
 texture = ExtResource( 7 )
 region = true
-region_rect = Rect2( 181, 0, 78, 114 )
+region_rect = Rect2( 181, 0, 78, 118 )
 
-[node name="anticlockwiser" type="Position2D" parent="help/controls/p1/scaler/a"]
+[node name="anticlockwiser" type="Position2D" parent="help/controls/p1/scaler/anticlockwise"]
 
 transform/rot = 1.00179e-05
-transform/scale = Vector2( 1, 1 )
 
-[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/a/anticlockwiser"]
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/anticlockwise/anticlockwiser"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-"anims/clockwise spin" = SubResource( 1 )
-"anims/plane anticlockwise" = SubResource( 2 )
+"anims/clockwise spin" = SubResource( 2 )
+"anims/plane anticlockwise" = SubResource( 3 )
 "next/clockwise spin" = ""
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = "plane anticlockwise"
 
-[node name="plane" parent="help/controls/p1/scaler/a/anticlockwiser" instance=ExtResource( 9 )]
+[node name="plane" parent="help/controls/p1/scaler/anticlockwise/anticlockwiser" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 0, 140 )
 transform/scale = Vector2( 0.8, 0.8 )
 fuselage_colour = Color( 1, 0, 0, 1 )
 
-[node name="s" type="Sprite" parent="help/controls/p1/scaler"]
+[node name="idle" type="Sprite" parent="help/controls/p1/scaler"]
 
 transform/pos = Vector2( 485.499, 510.393 )
 texture = ExtResource( 7 )
 region = true
-region_rect = Rect2( 105, 0, 76, 114 )
+region_rect = Rect2( 105, 0, 76, 118 )
 
-[node name="prop1" type="Sprite" parent="help/controls/p1/scaler/s"]
+[node name="prop1" type="Sprite" parent="help/controls/p1/scaler/idle"]
 
 transform/pos = Vector2( 0, -130 )
 transform/scale = Vector2( 2, 2 )
 texture = ExtResource( 8 )
 
-[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/s/prop1"]
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/idle/prop1"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
@@ -287,58 +284,215 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = "prop slow"
 
-[node name="d" type="Sprite" parent="help/controls/p1/scaler"]
+[node name="clockwise" type="Sprite" parent="help/controls/p1/scaler"]
 
 transform/pos = Vector2( 761.412, 512.294 )
 texture = ExtResource( 7 )
 region = true
-region_rect = Rect2( 266, 0, 82, 114 )
+region_rect = Rect2( 266, 0, 82, 118 )
 
-[node name="clockwiser" type="Position2D" parent="help/controls/p1/scaler/d"]
+[node name="clockwiser" type="Position2D" parent="help/controls/p1/scaler/clockwise"]
 
 transform/rot = -1.00179e-05
-transform/scale = Vector2( 1, 1 )
 
-[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/d/clockwiser"]
+[node name="animator" type="AnimationPlayer" parent="help/controls/p1/scaler/clockwise/clockwiser"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-"anims/plane clockwise" = SubResource( 1 )
+"anims/plane clockwise" = SubResource( 2 )
 "next/plane clockwise" = ""
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = "plane clockwise"
 
-[node name="plane" parent="help/controls/p1/scaler/d/clockwiser" instance=ExtResource( 9 )]
+[node name="plane" parent="help/controls/p1/scaler/clockwise/clockwiser" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 0, -140 )
 transform/scale = Vector2( 0.8, 0.8 )
 fuselage_colour = Color( 1, 0, 0, 1 )
 
-[node name="space" type="Sprite" parent="help/controls/p1/scaler"]
+[node name="fire" type="Sprite" parent="help/controls/p1/scaler"]
 
 transform/pos = Vector2( 501.014, 803.656 )
 texture = ExtResource( 7 )
 region = true
-region_rect = Rect2( 350, 0, 290, 114 )
+region_rect = Rect2( 350, 0, 290, 118 )
 
-[node name="plane1" parent="help/controls/p1/scaler/space" instance=ExtResource( 9 )]
+[node name="plane1" parent="help/controls/p1/scaler/fire" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( -80, -120 )
 transform/rot = -1.00179e-05
 transform/scale = Vector2( 0.8, 0.8 )
 fuselage_colour = Color( 1, 0, 0, 1 )
 
-[node name="bullet" parent="help/controls/p1/scaler/space/plane1" instance=ExtResource( 10 )]
+[node name="bullet" parent="help/controls/p1/scaler/fire/plane1" instance=ExtResource( 10 )]
 
-transform/pos = Vector2( 140, -11 )
+transform/pos = Vector2( 80, -11 )
 transform/rot = 1.00179e-05
 transform/scale = Vector2( 1.25, 1.25 )
 velocity/linear = Vector2( 100, 0 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="help/controls/p1/scaler/space/plane1/bullet"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="help/controls/p1/scaler/fire/plane1/bullet"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/bullet fire" = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "bullet fire"
+
+[node name="p2" type="MarginContainer" parent="help/controls"]
+
+rect/min_size = Vector2( 400, 350 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 404.0
+margin/top = 0.0
+margin/right = 804.0
+margin/bottom = 350.0
+
+[node name="scaler" type="Node2D" parent="help/controls/p2"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+
+[node name="throttle" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 489.069, 233.175 )
+texture = ExtResource( 7 )
+region = true
+region_rect = Rect2( 655, 0, 80, 118 )
+
+[node name="prop" type="Sprite" parent="help/controls/p2/scaler/throttle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/rot = -68.1249
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/throttle/prop"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop speedy" = SubResource( 1 )
+"next/prop speedy" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop speedy"
+
+[node name="anticlockwise" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 214.76, 508.63 )
+texture = ExtResource( 7 )
+region = true
+region_rect = Rect2( 735, 15, 120, 100 )
+
+[node name="anticlockwiser" type="Position2D" parent="help/controls/p2/scaler/anticlockwise"]
+
+transform/rot = 1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/anticlockwise/anticlockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/clockwise spin" = SubResource( 2 )
+"anims/plane anticlockwise" = SubResource( 3 )
+"next/clockwise spin" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane anticlockwise"
+
+[node name="plane" parent="help/controls/p2/scaler/anticlockwise/anticlockwiser" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 0, 140 )
+transform/scale = Vector2( 0.8, -0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="idle" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 485.499, 510.393 )
+texture = ExtResource( 7 )
+region = true
+region_rect = Rect2( 860, 0, 80, 118 )
+
+[node name="prop1" type="Sprite" parent="help/controls/p2/scaler/idle"]
+
+transform/pos = Vector2( 0, -130 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/idle/prop1"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/prop slow" = SubResource( 4 )
+"next/prop slow" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "prop slow"
+
+[node name="clockwise" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 761.412, 512.294 )
+texture = ExtResource( 7 )
+region = true
+region_rect = Rect2( 940, 15, 120, 100 )
+
+[node name="clockwiser" type="Position2D" parent="help/controls/p2/scaler/clockwise"]
+
+transform/rot = -1.00179e-05
+
+[node name="animator" type="AnimationPlayer" parent="help/controls/p2/scaler/clockwise/clockwiser"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+"anims/plane clockwise" = SubResource( 2 )
+"next/plane clockwise" = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "plane clockwise"
+
+[node name="plane" parent="help/controls/p2/scaler/clockwise/clockwiser" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 0, -140 )
+transform/scale = Vector2( 0.8, -0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="fire" type="Sprite" parent="help/controls/p2/scaler"]
+
+transform/pos = Vector2( 501.014, 803.656 )
+texture = ExtResource( 7 )
+region = true
+region_rect = Rect2( 1080, 0, 540, 118 )
+
+[node name="plane1" parent="help/controls/p2/scaler/fire" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 80, -120 )
+transform/rot = -1.00179e-05
+transform/scale = Vector2( -0.8, 0.8 )
+fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
+
+[node name="bullet" parent="help/controls/p2/scaler/fire/plane1" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 80, -11 )
+transform/rot = 1.00179e-05
+transform/scale = Vector2( 1.25, 1.25 )
+velocity/linear = Vector2( 100, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="help/controls/p2/scaler/fire/plane1/bullet"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
