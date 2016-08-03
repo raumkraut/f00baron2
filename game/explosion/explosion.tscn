@@ -9,10 +9,10 @@
 [ext_resource path="res://explosion/outer.png" type="Texture" id=7]
 [ext_resource path="res://explosion/inner.png" type="Texture" id=8]
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 6.14844, 22.3214 )
+points = Vector2Array( 6.47021, -19.5535, 8.53979, -0.739258, 6.65845, 18.4512, 0.449707, 23.531, -6.51172, 18.0751, -7.82861, 0.201416, -6.51172, -19.3654, 0.261475, -22.9401 )
 
 [sub_resource type="CircleShape2D" id=2]
 
@@ -80,7 +80,7 @@ flipped = false
 
 transform/pos = Vector2( 1.021, -8.76306 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 0.3, 0, 0, 0.3, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 2048
@@ -106,12 +106,13 @@ damp_override/angular = 0.1
 transform/scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 
-[node name="collider" type="CollisionShape2D" parent="debris/prop"]
+[node name="collider" type="CollisionPolygon2D" parent="debris/prop"]
 
 transform/scale = Vector2( 0.3, 0.3 )
-shape = SubResource( 6 )
+build_mode = 0
+polygon = Vector2Array( 0.261475, -22.9401, -6.51172, -19.3654, -7.82861, 0.201416, -6.51172, 18.0751, 0.449707, 23.531, 6.65845, 18.4512, 8.53979, -0.739258, 6.47021, -19.5535 )
+shape_range = Vector2( 0, 0 )
 trigger = false
-_update_shape_index = 0
 
 [node name="wheel" type="RigidBody2D" parent="debris"]
 
