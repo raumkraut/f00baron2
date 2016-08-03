@@ -351,7 +351,7 @@ fuselage_colour = Color( 1, 0, 0, 1 )
 
 transform/pos = Vector2( 80, -11 )
 transform/rot = 1.00179e-05
-transform/scale = Vector2( 1.25, 1.25 )
+transform/scale = Vector2( 3, 3 )
 collision/layers = 0
 collision/mask = 0
 velocity/linear = Vector2( 100, 0 )
@@ -511,7 +511,7 @@ fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
 
 transform/pos = Vector2( 80, -11 )
 transform/rot = 1.00179e-05
-transform/scale = Vector2( 1.25, 1.25 )
+transform/scale = Vector2( 3, 3 )
 collision/layers = 0
 collision/mask = 0
 velocity/linear = Vector2( 100, 0 )
