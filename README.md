@@ -9,3 +9,12 @@ classic Amiga PD game "Biplane Duel", that I use to teach myself new game
 engines.
 
 Written using Godot: https://godotengine.org
+
+Legalities
+----------
+
+This software is licensed under the terms of the GPLv3. See GPLv3.txt.
+
+The art assets are licensed under Creative Commons Attribution (CC-BY) v4.0:
+https://creativecommons.org/licenses/by/4.0/
+
