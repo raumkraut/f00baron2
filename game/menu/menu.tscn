@@ -197,7 +197,7 @@ params/modulate = Color( 1, 0, 0, 1 )
 [node name="controls" type="HBoxContainer" parent="help"]
 
 rect/min_size = Vector2( 800, 350 )
-focus/ignore_mouse = false
+focus/ignore_mouse = true
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
@@ -210,7 +210,7 @@ alignment = 0
 [node name="p1" type="MarginContainer" parent="help/controls"]
 
 rect/min_size = Vector2( 400, 350 )
-focus/ignore_mouse = false
+focus/ignore_mouse = true
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
@@ -218,6 +218,7 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 400.0
 margin/bottom = 350.0
+__meta__ = { "_editor_collapsed":true }
 
 [node name="scaler" type="Node2D" parent="help/controls/p1"]
 
@@ -370,7 +371,7 @@ autoplay = "bullet fire"
 [node name="p2" type="MarginContainer" parent="help/controls"]
 
 rect/min_size = Vector2( 400, 350 )
-focus/ignore_mouse = false
+focus/ignore_mouse = true
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
@@ -378,6 +379,7 @@ margin/left = 404.0
 margin/top = 0.0
 margin/right = 804.0
 margin/bottom = 350.0
+__meta__ = { "_editor_collapsed":true }
 
 [node name="scaler" type="Node2D" parent="help/controls/p2"]
 
