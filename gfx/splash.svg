@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 0 800.00001 600.00002"
+   id="svg4034"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="splash.svg"
+   inkscape:export-filename="/home/mel/src/godot/f00baron2/game/splash.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4036">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5544">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop5546" />
+      <stop
+         style="stop-color:#480000;stop-opacity:1"
+         offset="1"
+         id="stop5548" />
+    </linearGradient>
+    <linearGradient
+       id="bw-menu-text-2"
+       inkscape:collect="always">
+      <stop
+         id="stop4329"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         id="stop4331"
+         offset="1"
+         style="stop-color:#444444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="menu-text-0"
+       inkscape:collect="always">
+      <stop
+         id="stop4260"
+         offset="0"
+         style="stop-color:#ff0000;stop-opacity:1" />
+      <stop
+         id="stop4262"
+         offset="1"
+         style="stop-color:#420000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4136">
+      <stop
+         style="stop-color:#1b62ff;stop-opacity:1"
+         offset="0"
+         id="stop4138" />
+      <stop
+         style="stop-color:#87c4ff;stop-opacity:1"
+         offset="1"
+         id="stop4140" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4136"
+       id="linearGradient4142"
+       x1="384"
+       y1="620.36206"
+       x2="384"
+       y2="1388.3621"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       y2="1"
+       x2="0"
+       y1="0"
+       x1="0"
+       id="pattern-mountain">
+      <stop
+         id="stop29"
+         stop-color="#fff"
+         offset="0" />
+      <stop
+         id="stop31"
+         stop-color="#fff"
+         offset="0.1" />
+      <stop
+         id="stop33"
+         stop-color="#888"
+         offset="0.3" />
+      <stop
+         id="stop35"
+         stop-color="#444"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="1"
+       x2="0"
+       y1="0"
+       x1="0"
+       id="pattern-hill">
+      <stop
+         id="stop38"
+         stop-color="#4c4"
+         offset="0" />
+      <stop
+         id="stop40"
+         stop-color="#080"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       id="gradient-bullet"
+       gradientUnits="objectBoundingBox"
+       cx="0.2"
+       cy="0.2"
+       r="0.89999998"
+       spreadMethod="pad">
+      <stop
+         offset="0"
+         stop-color="#fff"
+         id="stop46" />
+      <stop
+         offset="0.1"
+         stop-color="#fff"
+         id="stop48" />
+      <stop
+         offset="1"
+         stop-color="#888"
+         id="stop50" />
+    </radialGradient>
+    <linearGradient
+       id="gradient-prop"
+       gradientUnits="objectBoundingBox"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#000"
+         stop-opacity="0.4"
+         id="stop11" />
+      <stop
+         offset="0.5"
+         stop-color="#000"
+         stop-opacity="1"
+         id="stop13" />
+      <stop
+         offset="1"
+         stop-color="#000"
+         stop-opacity="0.5"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gradient-prop"
+       id="linearGradient3431-3"
+       gradientUnits="userSpaceOnUse"
+       x1="60.10405"
+       y1="-2.1836405"
+       x2="60.104198"
+       y2="1.8716795"
+       gradientTransform="matrix(0.40070635,0,0,3.2056507,440.12577,271.00007)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient4278"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5544"
+       id="linearGradient6916"
+       gradientUnits="userSpaceOnUse"
+       x1="664.51172"
+       y1="1.0223247"
+       x2="664"
+       y2="64.000015"
+       gradientTransform="translate(-491.51174,376.97769)" />
+    <linearGradient
+       gradientTransform="translate(-0.49999989,44.000007)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient6936"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-0.49999989,44.000007)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient6981"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(-2,127)"
+       inkscape:collect="always"
+       xlink:href="#menu-text-0"
+       id="linearGradient4271"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       gradientTransform="translate(1.999999,166)"
+       inkscape:collect="always"
+       xlink:href="#bw-menu-text-2"
+       id="linearGradient4280"
+       x1="664"
+       y1="40.000019"
+       x2="664"
+       y2="64.000015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5544"
+       id="linearGradient6916-9"
+       gradientUnits="userSpaceOnUse"
+       x1="657.53406"
+       y1="24.095474"
+       x2="657.53406"
+       y2="64.095474"
+       gradientTransform="translate(-497.53403,439.90453)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5544"
+       id="linearGradient5582"
+       gradientUnits="userSpaceOnUse"
+       x1="664.51172"
+       y1="1.0223247"
+       x2="664"
+       y2="64.000015"
+       gradientTransform="translate(-486.48945,403.05084)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710682"
+     inkscape:cx="425.94943"
+     inkscape:cy="324.79732"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer9"
+     showgrid="true"
+     inkscape:window-width="1362"
+     inkscape:window-height="830"
+     inkscape:window-x="2181"
+     inkscape:window-y="256"
+     inkscape:window-maximized="0"
+     units="px"
+     guidetolerance="20"
+     inkscape:snap-tangential="false"
+     inkscape:snap-perpendicular="false"
+     objecttolerance="20"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-others="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-to-guides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4042"
+       spacingx="1"
+       spacingy="1"
+       empspacing="8"
+       snapvisiblegridlinesonly="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4039">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="sky"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-452.36205)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:url(#linearGradient4142);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3334"
+       width="800"
+       height="600"
+       x="0"
+       y="452.36206"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/gfx/sky.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="plane"
+     style="display:inline">
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 317,409.00001 3,-1 1,7 -4,0 z"
+       id="path4223"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/explosion/chassis.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"
+       d="m 326,424.00001 4,3 -4,1 z"
+       id="path4223-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/explosion/metal.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4312"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4314"><rect
+           id="rect4316"
+           width="280"
+           height="104"
+           x="544"
+           y="16.000019" /></flowRegion><flowPara
+         id="flowPara4318" /></flowRoot>    <g
+       id="g5550"
+       transform="matrix(5.0455451,3.2552849,-3.2552849,5.0455451,-867.41052,-2621.5917)">
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/pilot.png"
+         id="circle3405-3"
+         r="2.8334217"
+         cy="266"
+         cx="444"
+         style="color:#ff0000;fill:#aa6622;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="pilot" />
+      <g
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+         id="g4277">
+        <ellipse
+           class="machinery wheel"
+           style="color:#ff0000;fill:#888888;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           cx="434"
+           cy="275"
+           id="circle3411-2-2"
+           rx="1.0000054"
+           ry="1.0000198"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 450.99999,274.00001 5,6"
+           id="line3407-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="color:#ff0000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 459.99999,274.00001 -4,6"
+           id="line3409-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <ellipse
+           class="machinery wheel"
+           style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           cx="456"
+           cy="280"
+           id="circle3411-2"
+           rx="2.0000057"
+           ry="1.9999893"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wheels.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         style="fill:#ff0000;fill-opacity:1"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+         id="g4263">
+        <path
+           inkscape:connector-curvature="0"
+           class="fuselage"
+           d="m 439.99999,266.00001 c 3.02232,3.02231 6.46653,3.02231 11,0 l 9,0 c 2,0 3,2 3,3 l 0,3 c 0,1 -1,3 -3,3 l -23,0 c -5,0 -9.18275,-3 -9,-7 l 0.1339,-2.93085 c 0.18275,-4 3.8661,-5.06915 6.8661,1.93085 z"
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3413-9"
+           sodipodi:nodetypes="cccccccsscc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           inkscape:connector-curvature="0"
+           class="wing"
+           d="m 429.99999,271.00001 c -3,0 -3,-2 0,-2 l 4,0 c 3,0 3,2 0,2 z"
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3415-1"
+           sodipodi:nodetypes="ccccc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/fuselage.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinery.png"
+         id="g4273">
+        <rect
+           class="machinery gun"
+           style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="452"
+           y="264"
+           width="9.0000057"
+           height="2.9999888"
+           id="rect3417-2"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinerypng"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           inkscape:connector-curvature="0"
+           class="machinery"
+           style="color:#ff0000;fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 462.99999,268.00001 c 3,0 3,5 0,5"
+           id="path3427-6"
+           sodipodi:nodetypes="cc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/machinerypng"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         style="fill:#ff0000;fill-opacity:1"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+         id="g4267">
+        <path
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 446.99999,274.00001 5,-14"
+           id="line3419-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 454.99999,274.00001 5,-14"
+           id="line3421-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           inkscape:connector-curvature="0"
+           class="wing"
+           d="m 445.99999,276.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3425-3"
+           sodipodi:nodetypes="ccccc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           inkscape:connector-curvature="0"
+           class="wing"
+           d="m 450.99999,262.00001 c -2.99999,0 -2.99999,-3 0,-3 l 10,-1 c 2,0 3,4 0,4 z"
+           style="color:#ff0000;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3425-3-6"
+           sodipodi:nodetypes="ccccc"
+           inkscape:export-filename="/home/mel/src/godot/f00baron2/game/plane/wings.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <rect
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/plane/prop.png"
+         id="rect3429-0"
+         height="12.999989"
+         width="2.0000057"
+         y="264"
+         x="463.2099"
+         style="color:#ff0000;fill:url(#linearGradient3431-3);stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         class="machinery propellor">
+        <set
+           dur="0.1s"
+           begin="0s;animProp.end+0.1s"
+           to="0.7"
+           attributeName="opacity"
+           attributeType="CSS"
+           id="animProp" />
+      </rect>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="clouds"
+     style="display:inline">
+    <g
+       id="g4284"
+       style="fill:#ffffff;fill-opacity:1"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/scenes/cloud/cloud.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"
+       transform="matrix(4.3409522,0,0,4.3409522,-596.31796,-782.9324)">
+      <path
+         id="path7524"
+         d="m 130.82926,190.24392 q -16.68293,-5.56098 -8.34146,-22.24391 -5.56098,-16.68292 11.12195,-22.2439 5.56098,-16.68293 22.2439,-11.12195 16.68293,-11.12195 27.80488,2.78049 16.68293,-11.12195 27.80488,5.56097 19.46342,-5.56097 22.2439,11.12195 19.46342,-2.78048 16.68293,16.68293 13.90244,11.12195 0,22.24391 2.78049,13.90243 -13.90244,13.90243 -11.12195,13.90244 -25.02439,2.78049 -11.12195,11.12195 -22.2439,0 -11.12195,13.90244 -22.24391,2.78049 -13.90243,8.34146 -22.2439,-5.56098 -19.46341,-2.78048 -13.90244,-16.68292 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7526"
+         d="m 141.95121,173.56099 q -2.78048,-8.34146 5.56098,-11.12195 0,-13.90244 11.12195,-11.12195 5.56098,-11.12195 16.68293,-2.78049"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7528"
+         d="m 208.68292,195.80489 q 11.12195,5.56098 13.90244,-5.56097 13.90244,0 11.12195,-13.90244"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7530"
+         d="m 164.19512,190.24392 q 8.34146,8.34146 16.68292,2.78049"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path7532"
+         d="m 192,168.00001 q 8.34146,-11.12195 16.68292,-5.56097"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="text">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="60.488258"
+       y="440.97769"
+       id="text4228"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4234"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;writing-mode:lr-tb;text-anchor:start;fill:none;fill-opacity:1;stroke:#000000;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="60.488258"
+         y="440.97769">#F00 Baron 2 </tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6912"
+       y="440.97769"
+       x="60.488258"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient6916);fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient6916);fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan6914"
+         sodipodi:role="line"
+         x="60.488258"
+         y="440.97769">#F00 Baron 2 </tspan></text>
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 310.97771,471.92685 3,-1 1,7 -4,0 z"
+       id="path4223-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/explosion/chassis.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"
+       d="m 319.97771,486.92685 4,3 -4,1 z"
+       id="path4223-3-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/explosion/metal.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="54.465965"
+       y="503.90451"
+       id="text4228-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan5642"
+         x="54.465965"
+         y="503.90451">Symmetric Boogaloo</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6912-9"
+       y="503.90451"
+       x="54.465965"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Bangers;-inkscape-font-specification:'Bangers, Normal';text-align:start;letter-spacing:1.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient6916-9);fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mel/src/godot/f00baron2/game/menu/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan5640"
+         style="fill:url(#linearGradient6916-9)"
+         x="54.465965"
+         y="503.90451">Symmetric Boogaloo</tspan></text>
+  </g>
+</svg>
