@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=1]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
 [ext_resource path="res://scenery/background.tscn" type="PackedScene" id=2]
@@ -10,7 +10,7 @@
 
 [sub_resource type="Animation" id=1]
 
-resource/name = "score fadein"
+resource_name = "score fadein"
 length = 1.0
 loop = false
 step = 0.1
@@ -18,12 +18,22 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("p1 score:visibility/opacity")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
 tracks/1/type = "value"
 tracks/1/path = NodePath("p2 score:visibility/opacity")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 1.0 ] }
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -47,33 +57,35 @@ extents = Vector2( 450, 20 )
 
 [node name="game" type="Control"]
 
-anchor/right = 1
-anchor/bottom = 1
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 0.0
-margin/bottom = 0.0
-script/script = ExtResource( 1 )
+anchor_right = 1
+anchor_bottom = 1
+focus_ignore_mouse = false
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 2
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+script = ExtResource( 1 )
 
 [node name="background" parent="." instance=ExtResource( 2 )]
 
+
 [node name="hud" type="Node2D" parent="."]
+
 
 [node name="p1 score" type="Label" parent="hud"]
 
 visibility/opacity = 0.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 10.0
-margin/top = 0.0
-margin/right = 400.0
-margin/bottom = 66.0
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 10.0
+margin_top = 0.0
+margin_right = 400.0
+margin_bottom = 66.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -88,14 +100,14 @@ max_lines_visible = -1
 [node name="p2 score" type="Label" parent="hud"]
 
 visibility/opacity = 0.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 400.0
-margin/top = 0.0
-margin/right = 790.0
-margin/bottom = 66.0
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 0
+margin_left = 400.0
+margin_top = 0.0
+margin_right = 790.0
+margin_bottom = 66.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.666667, 0.533333, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -110,10 +122,10 @@ max_lines_visible = -1
 
 [node name="fadein" type="AnimationPlayer" parent="hud"]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
-"anims/score fadein" = SubResource( 1 )
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/score fadein = SubResource( 1 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -121,15 +133,15 @@ autoplay = "score fadein"
 
 [node name="debug" type="Label" parent="hud"]
 
-process/pause_mode = 2
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 4.0
-margin/top = 4.0
-margin/right = 600.0
-margin/bottom = 500.0
+pause_mode = 2
+focus_ignore_mouse = true
+focus_stop_mouse = true
+size_flags_horizontal = 2
+size_flags_vertical = 2
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 600.0
+margin_bottom = 500.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 percent_visible = 1.0
 lines_skipped = 0
@@ -137,37 +149,37 @@ max_lines_visible = -1
 
 [node name="airspace" type="Area2D" parent="."]
 
-input/pickable = true
+input_pickable = true
 shapes/0/shape = SubResource( 2 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 400, 250 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 400, 250 )
 shapes/0/trigger = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision/layers = 1024
-collision/mask = 2051
+collision_layer = 1024
+collision_mask = 2051
 
 [node name="collider" type="CollisionShape2D" parent="airspace"]
 
-transform/pos = Vector2( 400, 250 )
+position = Vector2( 400, 250 )
 shape = SubResource( 2 )
 trigger = true
 _update_shape_index = 0
 
 [node name="ceiling" type="Area2D" parent="airspace"]
 
-transform/pos = Vector2( 400, -60 )
-input/pickable = true
+position = Vector2( 400, -60 )
+input_pickable = true
 shapes/0/shape = SubResource( 3 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 space_override = 3
 gravity_vec = Vector2( 0, 1 )
 gravity = 500.0
 linear_damp = 0.8
 angular_damp = 1.0
-collision/layers = 1024
+collision_layer = 1024
 
 [node name="collider" type="CollisionShape2D" parent="airspace/ceiling"]
 
@@ -175,15 +187,17 @@ shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 0
 
-[node name="ground" type="StaticBody2D" parent="airspace" groups=[ "floor" ]]
+[node name="ground" type="StaticBody2D" parent="airspace" groups=[
+"floor",
+]]
 
-transform/pos = Vector2( 400, 584 )
-input/pickable = false
+position = Vector2( 400, 584 )
+input_pickable = false
 shapes/0/shape = SubResource( 4 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-collision/layers = 1024
-collision/mask = 3075
+collision_layer = 1024
+collision_mask = 3075
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -195,40 +209,44 @@ shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 0
 
-[node name="player1" parent="airspace" groups=[ "players" ] instance=ExtResource( 4 )]
+[node name="player1" parent="airspace" instance=ExtResource( 4 ) groups=[
+"players",
+]]
 
-visibility/visible = false
-transform/pos = Vector2( 38.96, 556.597 )
-transform/rot = 15.0
-collision/layers = 0
-collision/mask = 1024
+visible = false
+position = Vector2( 38.96, 556.597 )
+rotation_deg = -15.0
+collision_layer = 0
+collision_mask = 1024
 player_id = 1
 fuselage_colour = Color( 1, 0, 0, 1 )
 
-[node name="player2" parent="airspace" groups=[ "players" ] instance=ExtResource( 4 )]
+[node name="player2" parent="airspace" instance=ExtResource( 4 ) groups=[
+"players",
+]]
 
-visibility/visible = false
-transform/pos = Vector2( 756.12, 558.057 )
-transform/rot = 165.0
-collision/layers = 0
-collision/mask = 1024
+visible = false
+position = Vector2( 756.12, 558.057 )
+rotation_deg = -165.0
+collision_layer = 0
+collision_mask = 1024
 flipped = true
 player_id = 2
 fuselage_colour = Color( 0.666667, 0.533333, 1, 1 )
 
 [node name="runway" type="Area2D" parent="airspace"]
 
-transform/pos = Vector2( 400, 550 )
-input/pickable = true
+position = Vector2( 400, 550 )
+input_pickable = true
 shapes/0/shape = SubResource( 5 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision/layers = 1024
-collision/mask = 0
+collision_layer = 1024
+collision_mask = 0
 
 [node name="collider" type="CollisionShape2D" parent="airspace/runway"]
 
@@ -238,55 +256,53 @@ _update_shape_index = 0
 
 [node name="flag1" parent="airspace/runway" instance=ExtResource( 5 )]
 
-process/pause_mode = 2
-transform/pos = Vector2( -381.079, 1.77378 )
-transform/scale = Vector2( 0.2, 0.2 )
+pause_mode = 2
+position = Vector2( -381.079, 1.77378 )
+scale = Vector2( 0.2, 0.2 )
 colour = Color( 1, 0, 0, 1 )
 
 [node name="flag2" parent="airspace/runway" instance=ExtResource( 5 )]
 
-process/pause_mode = 2
-transform/pos = Vector2( 374.932, 1.77378 )
-transform/scale = Vector2( 0.2, 0.2 )
+pause_mode = 2
+position = Vector2( 374.932, 1.77378 )
+scale = Vector2( 0.2, 0.2 )
 colour = Color( 0.666667, 0.533333, 1, 1 )
 
 [node name="clouds" type="VisibilityNotifier2D" parent="."]
 
-process/pause_mode = 2
+pause_mode = 2
 rect = Rect2( -87, 100, 975, 330 )
 
 [node name="cloud1" parent="clouds" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 184.687, 425.499 )
-transform/scale = Vector2( 0.7, 0.7 )
+position = Vector2( 184.687, 425.499 )
+scale = Vector2( 0.7, 0.7 )
 
 [node name="cloud2" parent="clouds" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 719.981, 98.9208 )
-transform/scale = Vector2( 0.7, 0.7 )
+position = Vector2( 719.981, 98.9208 )
+scale = Vector2( 0.7, 0.7 )
 
 [node name="cloud3" parent="clouds" instance=ExtResource( 6 )]
 
-transform/pos = Vector2( -84.1877, 162.763 )
-transform/scale = Vector2( 0.7, 0.7 )
+position = Vector2( -84.1877, 162.763 )
+scale = Vector2( 0.7, 0.7 )
 
 [node name="menu" parent="." instance=ExtResource( 7 )]
 
-process/pause_mode = 2
+pause_mode = 2
 active_colour = Color( 0.666667, 0.533333, 1, 1 )
 
-[connection signal="body_exit" from="airspace" to="." method="_on_airspace_body_exit"]
+[connection signal="body_exited"  from="airspace"  to="." method="_on_airspace_body_exit" binds=[  ]]
 
-[connection signal="player_death" from="airspace/player1" to="." method="_on_player_death"]
+[connection signal="player_death"  from="airspace/player1"  to="." method="_on_player_death" binds=[  ]]
 
-[connection signal="player_death" from="airspace/player2" to="." method="_on_player_death"]
+[connection signal="player_death"  from="airspace/player2"  to="." method="_on_player_death" binds=[  ]]
 
-[connection signal="body_exit" from="airspace/runway" to="." method="_on_runway_body_exit"]
+[connection signal="body_exited"  from="airspace/runway"  to="." method="_on_runway_body_exit" binds=[  ]]
 
-[connection signal="new_game" from="menu" to="." method="_on_menu_new_game"]
+[connection signal="new_game"  from="menu"  to="." method="_on_menu_new_game" binds=[  ]]
 
-[connection signal="quit" from="menu" to="." method="_on_menu_quit"]
+[connection signal="quit"  from="menu"  to="." method="_on_menu_quit" binds=[  ]]
 
-[connection signal="unpause" from="menu" to="." method="_on_menu_unpause"]
-
-
+[connection signal="unpause"  from="menu"  to="." method="_on_menu_unpause" binds=[  ]]

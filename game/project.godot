@@ -1,0 +1,34 @@
+[application]
+
+boot_splash = "res://splash.png"
+icon = "res://icon.png"
+main_scene = "res://game.tscn"
+name = "#F00 Baron 2"
+
+[display]
+
+stretch/aspect = "keep"
+stretch/mode = "2d"
+window/height = 600
+window/width = 800
+
+[input]
+
+p1_anticlockwise = [ InputEvent(KEY,65) ]
+p1_clockwise = [ InputEvent(KEY,68) ]
+p1_fire = [ InputEvent(KEY,32) ]
+p1_throttle_down = [ InputEvent(KEY,83) ]
+p1_throttle_up = [ InputEvent(KEY,87) ]
+p2_anticlockwise = [ InputEvent(KEY,16777231) ]
+p2_clockwise = [ InputEvent(KEY,16777233) ]
+p2_fire = [ InputEvent(KEY,16777238), InputEvent(KEY,16777350) ]
+p2_throttle_down = [ InputEvent(KEY,16777234) ]
+p2_throttle_up = [ InputEvent(KEY,16777232) ]
+pause = [ InputEvent(KEY,16777217) ]
+
+[physics]
+
+2d/default_angular_damp = 1
+2d/default_gravity = 250
+2d/default_linear_damp = 0.4
+

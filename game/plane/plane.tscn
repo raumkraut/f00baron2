@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://plane/plane.gd" type="Script" id=1]
 [ext_resource path="res://plane/wheels.png" type="Texture" id=2]
@@ -10,38 +10,40 @@
 
 [node name="plane" type="Node2D"]
 
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 fuselage_colour = Color( 1, 1, 1, 1 )
 
 [node name="wheels" type="Sprite" parent="."]
 
-transform/pos = Vector2( 3.43852, 29.1236 )
+position = Vector2( 3.43852, 29.1236 )
 texture = ExtResource( 2 )
 
 [node name="pilot" type="Sprite" parent="."]
 
-transform/pos = Vector2( -4.20705, -9.43448 )
+position = Vector2( -4.20705, -9.43448 )
 texture = ExtResource( 3 )
 
-[node name="fuselage" type="Sprite" parent="." groups=[ "coloured" ]]
+[node name="fuselage" type="Sprite" parent="." groups=[
+"coloured",
+]]
 
-transform/pos = Vector2( 0, -1.22774 )
+position = Vector2( 0, -1.22774 )
 texture = ExtResource( 4 )
 
 [node name="machinery" type="Sprite" parent="."]
 
-transform/pos = Vector2( 44.0758, -0.36832 )
+position = Vector2( 44.0758, -0.36832 )
 texture = ExtResource( 5 )
 
 [node name="wings" type="Sprite" parent="."]
 
-transform/pos = Vector2( 24.994, -7.12088 )
+position = Vector2( 24.994, -7.12088 )
 texture = ExtResource( 6 )
 
 [node name="prop" type="Sprite" parent="."]
 
 visibility/opacity = 0.7
-transform/pos = Vector2( 63.1499, 5.81134 )
+position = Vector2( 63.1499, 5.81134 )
 texture = ExtResource( 7 )
 
 [node name="rotator" type="Timer" parent="prop"]
@@ -50,5 +52,3 @@ process_mode = 1
 wait_time = 0.1
 one_shot = false
 autostart = false
-
-
