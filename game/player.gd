@@ -2,9 +2,10 @@
 extends RigidBody2D
 
 # Initial params
-onready var spawn_pos = get_pos()
-onready var spawn_rot = get_rot()
-onready var undercarriage_shapes = range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
+onready var spawn_pos = get_position()
+onready var spawn_rot = get_rotation()
+## TODO: Fix undercarriage_shapes
+onready var undercarriage_shapes = false #range(get_node('undercarriage').get_collision_object_first_shape(), get_node('undercarriage').get_collision_object_last_shape() + 1)
 onready var bullet = preload('res://plane/bullet.tscn')
 export var flipped = false
 # Personalisation
@@ -41,7 +42,6 @@ func _ready():
 		for node in get_children():
 			if node.has_method('set_scale'):
 				node.set_scale(node.get_scale() * Vector2(1, -1))
-	set_fixed_process(true)
 	
 
 func set_colour(colour):
@@ -111,7 +111,7 @@ func shooty_mcshootface():
 	get_node('..').add_child(pew)
 	
 
-func _fixed_process(delta):
+func _physics_process(delta):
 	if respawning:
 		do_respawn()
 		respawning = false

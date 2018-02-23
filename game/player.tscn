@@ -1,27 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://player.gd" type="Script" id=1]
 [ext_resource path="res://plane/plane.tscn" type="PackedScene" id=2]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -43.3327, 20.9146, -60.9819, 4.41177, -59.0444, -24.4512, 55.8264, -39.5607, 67.8365, -15.5405, 67.5027, 27.7352 )
-
-[sub_resource type="ConvexPolygonShape2D" id=2]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 46.1882, 33.1349, 39.0834, 45.071, -42.7643, 24.8933 )
-
-[node name="player" type="RigidBody2D"]
+[node name="player" type="RigidBody2D" index="0"]
 
 input_pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Transform2D( 0.3, 0, 0, 0.3, 0, 0 )
-shapes/0/trigger = false
-shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Transform2D( 0.3, 0, 0, 0.3, 0, 0 )
-shapes/1/trigger = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
@@ -36,56 +20,54 @@ contact_monitor = true
 sleeping = false
 can_sleep = false
 linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
 angular_velocity = 0.0
-damp_override/linear = -1.0
-damp_override/angular = 0.0
+angular_damp = -1.0
 script = ExtResource( 1 )
 flipped = false
 player_id = null
 fuselage_colour = Color( 1, 1, 1, 1 )
 
-[node name="plane" parent="." instance=ExtResource( 2 )]
+[node name="plane" parent="." index="0" instance=ExtResource( 2 )]
 
 scale = Vector2( 0.3, 0.3 )
 
-[node name="airframe" type="CollisionPolygon2D" parent="."]
+[node name="airframe" type="CollisionPolygon2D" parent="." index="1"]
 
 scale = Vector2( 0.3, 0.3 )
 build_mode = 0
 polygon = PoolVector2Array( 67.5027, 27.7352, 67.8365, -15.5405, 55.8264, -39.5607, -59.0444, -24.4512, -60.9819, 4.41177, -43.3327, 20.9146 )
-shape_range = Vector2( 0, 0 )
-trigger = false
 
-[node name="undercarriage" type="CollisionPolygon2D" parent="." groups=[
+[node name="undercarriage" type="CollisionPolygon2D" parent="." index="2" groups=[
 "foo",
 ]]
 
 scale = Vector2( 0.3, 0.3 )
 build_mode = 0
 polygon = PoolVector2Array( -42.7643, 24.8933, 39.0834, 45.071, 46.1882, 33.1349 )
-shape_range = Vector2( 1, 1 )
-trigger = false
 
-[node name="invulnerability" type="Timer" parent="."]
+[node name="invulnerability" type="Timer" parent="." index="3"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = true
 
-[node name="reloading" type="Timer" parent="."]
+[node name="reloading" type="Timer" parent="." index="4"]
 
 process_mode = 0
 wait_time = 0.8
 one_shot = true
 autostart = false
 
-[node name="barrel" type="Position2D" parent="."]
+[node name="barrel" type="Position2D" parent="." index="5"]
 
 position = Vector2( 25.4069, -3.32506 )
 
-[connection signal="body_shape_entered"  from="."  to="." method="_on_player_body_enter_shape" binds=[  ]]
+[connection signal="body_shape_entered" from="." to="." method="_on_player_body_enter_shape"]
 
-[connection signal="timeout"  from="invulnerability"  to="." method="_on_invulnerability_timeout" binds=[  ]]
+[connection signal="timeout" from="invulnerability" to="." method="_on_invulnerability_timeout"]
 
-[connection signal="timeout"  from="reloading"  to="." method="_on_reloading_timeout" binds=[  ]]
+[connection signal="timeout" from="reloading" to="." method="_on_reloading_timeout"]
+
+
